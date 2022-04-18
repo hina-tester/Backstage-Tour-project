@@ -13,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 
 import com.Tour.qa.base.TestBase;
 
+import io.qameta.allure.Attachment;
+
 
 public class TestUtil extends TestBase{
 	
@@ -20,6 +22,7 @@ public class TestUtil extends TestBase{
 	public static long PAGE_LOAD_TIMEOUT  = 20;
 	public static long  IMPLICIT_WAIT = 10;
 	
+		
 	 public static void takeScreenshotAtEndOfTest() throws IOException {
 		  
 		  File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -28,19 +31,39 @@ public class TestUtil extends TestBase{
 		  
 		  }
 	 
-	
-	
- 
-	 public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
+	 public static String getScreenshot(String name)
+		{
+			TakesScreenshot ts=(TakesScreenshot) driver;
+			
+			File src=ts.getScreenshotAs(OutputType.FILE);
+			
+			String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
+			
+			File destination=new File(path);
+			
+			try 
+			{
+				FileUtils.copyFile(src, destination);
+			} catch (IOException e) 
+			{
+				System.out.println("Capture Failed "+e.getMessage());
+			}
+			
+			return path;
+		}
+	 
+		
+	 public static String takeScreenShot(WebDriver driver, String screenshotName) throws IOException{
 			String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			// after execution, you could see a folder "FailedTestsScreenshots"
 			// under src folder
-			String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
+			String destination = System.getProperty("user.dir") + "/screenshots/" + screenshotName + dateName
 					+ ".png";
 			File finalDestination = new File(destination);
 			FileUtils.copyFile(source, finalDestination);
+			
 			return destination;
 		}
 		

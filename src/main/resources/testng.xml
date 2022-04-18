@@ -4,18 +4,19 @@
 
 	<listeners>
 	
-  <listener class-name="com.qa.ExtandReportListner.ExtandReportListner"/>   
+  <!--   <listener class-name="com.qa.ExtandReportListner.ExtandReportListner"/>   -->
+<listener class-name="com.Tour.qa.util.Reporting" /> 
  
-			
-		
-		
+ 
+
 	</listeners>
 
 	<test name="Chick-fil-A®Backstage Tour Test Cases">
+	
 		<classes>
-			<class name="com.Tour.qa.testdata.HomePageTest"></class>
-		<class name="com.Tour.qa.testdata.ChooseDateTest"></class>
-	 	<class name="com.Tour.qa.testdata.ChooseTourTest"></class>
+ 		<class name="com.Tour.qa.testdata.HomePageTest"></class>
+      	<class name="com.Tour.qa.testdata.ChooseDateTest"></class>
+	 	 <class name="com.Tour.qa.testdata.ChooseTourTest"></class>
 			<class name="com.Tour.qa.testdata.ConfirmationPageTest"></class>
 			<class name="com.Tour.qa.testdata.EditReservationTest"></class>
 			<class name="com.Tour.qa.testdata.ModifyCancelTest"></class>
@@ -27,7 +28,8 @@
 			<class name="com.Tour.qa.testdata.FaqPageTest"></class>
 			<class name="com.Tour.qa.testdata.ForgotPasswordTest"></class>
 			<class name="com.Tour.qa.testdata.HeaderFooterTest"></class>
-			 	
+			  
+			   
 			
 		</classes>
 	</test>

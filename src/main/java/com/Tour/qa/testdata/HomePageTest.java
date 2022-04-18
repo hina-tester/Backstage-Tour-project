@@ -8,27 +8,20 @@ import org.testng.ITestResult;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
 import com.Tour.qa.pages.ChoosTour;
 import com.Tour.qa.pages.HomePage;
 import com.Tour.qa.util.TestUtil;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-
-
-
 
 public class HomePageTest  extends TestBase {
-
-	
 
 	HomePage homePage;
 	ChoosTour chooseTour;
 	TestUtil util;
+
 	
 	
 	
@@ -41,6 +34,7 @@ public class HomePageTest  extends TestBase {
 		initialization();
 		homePage = new HomePage();	
 		util = new TestUtil();
+	
 		
 	}
 	
@@ -48,6 +42,7 @@ public class HomePageTest  extends TestBase {
 	public void HomePageTitleTest(){
 		
 		String title = homePage.validateHomePageTitle();
+		
 		Assert.assertEquals(title, "Backstage Tours");
 	}
 
@@ -62,7 +57,7 @@ public class HomePageTest  extends TestBase {
 	@Test(priority=2)
 	public void CheckModifyCancel(){
 		String title = homePage.CheckModifyCancel();
-		Assert.assertEquals(title, "Logo");
+		Assert.assertEquals(title, "Logon");
 	}
 	
 		
@@ -78,6 +73,7 @@ public class HomePageTest  extends TestBase {
 	@AfterMethod
 public void tearDown() throws IOException{
 		
+	
 			driver.quit();
 	
 	}

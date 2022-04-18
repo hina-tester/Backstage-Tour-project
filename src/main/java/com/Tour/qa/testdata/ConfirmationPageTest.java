@@ -2,10 +2,12 @@ package com.Tour.qa.testdata;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -18,6 +20,8 @@ import com.Tour.qa.pages.HomePage;
 import com.Tour.qa.pages.LoginPage;
 import com.Tour.qa.pages.PaymentPage;
 import com.Tour.qa.pages.RegistrationPage;
+
+
 
 public class ConfirmationPageTest  extends TestBase{
 	
@@ -67,6 +71,8 @@ public class ConfirmationPageTest  extends TestBase{
 		 
 	//	 confirmPage = 
 				 RegisPage.CheckFillData();
+				 driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+				 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	      
 		
 					

@@ -1,18 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Chick-fil-A® Backstage Tour Automation Test]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Chick-fil-A® Backstage Tour Automation Test]">
   <listeners>
-    <listener class-name="com.qa.ExtandReportListner.ExtandReportListner"/>
+    <listener class-name="com.Tour.qa.util.Reporting"/>
   </listeners>
   <test thread-count="5" name="Chick-fil-A®Backstage Tour Test Cases(failed)">
     <classes>
-      <class name="com.Tour.qa.testdata.HomePageTest">
+      <class name="com.Tour.qa.testdata.ForgotPasswordTest">
         <methods>
           <include name="tearDown"/>
-          <include name="CheckModifyCancel"/>
+          <include name="ValidateResetPWWithInValidEmail"/>
+          <include name="ValidateResetPWWithValidEmail"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.Tour.qa.testdata.HomePageTest -->
+      </class> <!-- com.Tour.qa.testdata.ForgotPasswordTest -->
+      <class name="com.Tour.qa.testdata.RegistrationTest">
+        <methods>
+          <include name="TestpwwithInt"/>
+          <include name="checkLname"/>
+          <include name="checkGroupSizeToString"/>
+          <include name="checkPWnotMatch"/>
+          <include name="validateGroupSize"/>
+          <include name="emptyFormtTest"/>
+          <include name="checkMandatoryFields"/>
+          <include name="invalidPasswordTest"/>
+          <include name="invalidZipCodeTest"/>
+          <include name="validateChoosFromMenu"/>
+          <include name="validateLoginButton"/>
+          <include name="HeadingValidate1"/>
+          <include name="ValidateHeading4"/>
+          <include name="validateGroupText1"/>
+          <include name="CheckFillData"/>
+          <include name="setUp"/>
+          <include name="CheckBanner"/>
+          <include name="ValidateHeading5"/>
+          <include name="ValidateHeading3"/>
+          <include name="vehiclesinvalidgTest"/>
+          <include name="HomePageTitleTest"/>
+          <include name="ValidateHeading2"/>
+          <include name="validateChoosDate"/>
+          <include name="TestLessDigitinMob"/>
+          <include name="tearDown"/>
+          <include name="checkEmailnotMatch"/>
+          <include name="CheckduplicateEmail"/>
+          <include name="validateService"/>
+          <include name="checkFname"/>
+          <include name="CheckinvalidData"/>
+          <include name="CheckInvalidEmail"/>
+          <include name="textcharacterinMobe"/>
+          <include name="validateForgot"/>
+          <include name="testPWwithString"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.RegistrationTest -->
+      <class name="com.Tour.qa.testdata.ChooseDateTest">
+        <methods>
+          <include name="SelectValidSlotTest"/>
+          <include name="setUp"/>
+          <include name="validateGroupSize2"/>
+          <include name="validateTheDeluxe"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.ChooseDateTest -->
+      <class name="com.Tour.qa.testdata.ModifyCancelTest">
+        <methods>
+          <include name="checkDeleteTour"/>
+          <include name="setUp"/>
+          <include name="printGroupSize"/>
+          <include name="tearDown"/>
+          <include name="date"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.ModifyCancelTest -->
+      <class name="com.Tour.qa.testdata.PaymentPageTest">
+        <methods>
+          <include name="validateTax"/>
+          <include name="setUp"/>
+          <include name="validateQuantityTest"/>
+          <include name="tearDown"/>
+          <include name="ValidateBankLink"/>
+          <include name="validatePaymentwithinvalidInput"/>
+          <include name="validatePaymentwithemptyInput"/>
+          <include name="validatePrice"/>
+          <include name="validateTitle"/>
+          <include name="validateUnit"/>
+          <include name="validatePayment"/>
+          <include name="validateTotal"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.PaymentPageTest -->
+      <class name="com.Tour.qa.testdata.HeaderFooterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateResendlink"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.HeaderFooterTest -->
+      <class name="com.Tour.qa.testdata.ReservationOverviewTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validatePageH"/>
+          <include name="checkSpecialNeed"/>
+          <include name="setUp"/>
+          <include name="validateGroupName"/>
+          <include name="validateeModifyButt"/>
+          <include name="vaildateCancleButt"/>
+          <include name="validateConfirmButt"/>
+          <include name="validateConfirmButtonLable"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.ReservationOverviewTest -->
+      <class name="com.Tour.qa.testdata.EditReservationTest">
+        <methods>
+          <include name="validatesNeed"/>
+          <include name="GuestFieldOnErrorPage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateDateLink"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.EditReservationTest -->
+      <class name="com.Tour.qa.testdata.ConfirmationPageTest">
+        <methods>
+          <include name="validateGroupSizeTest"/>
+          <include name="validateRegistration"/>
+          <include name="validateTheOriginalTest"/>
+          <include name="validateTick"/>
+          <include name="CheckBanner"/>
+          <include name="setUp"/>
+          <include name="ValidateTourType"/>
+          <include name="ValidateVehica"/>
+          <include name="validateHeading3"/>
+          <include name="validateHeading1"/>
+          <include name="validateChooseTourMenuOption"/>
+          <include name="validateHeading2"/>
+          <include name="validateHeading5"/>
+          <include name="ValidateGroupSize"/>
+          <include name="ValidateTypeOfGrop"/>
+          <include name="Validatefname"/>
+          <include name="validateCancelButt2"/>
+          <include name="validateHeading4"/>
+          <include name="ValidateCost"/>
+          <include name="validatePurchaseTicketButt"/>
+          <include name="validateModifyReservationButt2"/>
+          <include name="validatePageHeading"/>
+          <include name="Checkmenu"/>
+          <include name="ValidateTravell"/>
+          <include name="validatePurchaseTicketButt2"/>
+          <include name="validateTitle"/>
+          <include name="validateChooseDateOption"/>
+          <include name="tearDown"/>
+          <include name="ValidateZip"/>
+          <include name="validateBannerTest"/>
+          <include name="ValidateNameOfGroup"/>
+          <include name="ValidateLname"/>
+          <include name="ValidateMobile"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.ConfirmationPageTest -->
+      <class name="com.Tour.qa.testdata.PrintTicketTest">
+        <methods>
+          <include name="validateRegistration"/>
+          <include name="validatePageHeading2"/>
+          <include name="validatePlanVisit"/>
+          <include name="validatePageHeading1"/>
+          <include name="setUp"/>
+          <include name="validatechooseDate"/>
+          <include name="validateheading2"/>
+          <include name="validateheading4"/>
+          <include name="validateheading1"/>
+          <include name="validateheading3"/>
+          <include name="validatemenu"/>
+          <include name="validateOriginal"/>
+          <include name="validatecardnum"/>
+          <include name="validateTitle"/>
+          <include name="validatedate"/>
+          <include name="validatecardHolderName"/>
+          <include name="printTicketmenu"/>
+          <include name="tick1"/>
+          <include name="tick2"/>
+          <include name="validatechooseTour"/>
+          <include name="validatelinkquestion"/>
+          <include name="validateBanner"/>
+          <include name="printTicket"/>
+          <include name="tearDown"/>
+          <include name="validateconfirm"/>
+          <include name="validatemailto"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.PrintTicketTest -->
     </classes>
   </test> <!-- Chick-fil-A®Backstage Tour Test Cases(failed) -->
 </suite> <!-- Failed suite [Chick-fil-A® Backstage Tour Automation Test] -->

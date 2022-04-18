@@ -1,8 +1,11 @@
 package com.Tour.qa.testdata;
 
+import java.time.Duration;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -17,6 +20,8 @@ import com.Tour.qa.pages.LoginPage;
 import com.Tour.qa.pages.PaymentPage;
 import com.Tour.qa.pages.PrintTicket;
 import com.Tour.qa.pages.RegistrationPage;
+
+
 
 public class PrintTicketTest extends TestBase{
 	
@@ -72,6 +77,9 @@ public class PrintTicketTest extends TestBase{
 				 
 				 payment = confirmPage.validatePurchaseTicketButt();
 				 	 payment.validatePayment();
+				 	 
+				 	driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+					 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 						
 				 	 
 					

@@ -1,7 +1,10 @@
 package com.Tour.qa.testdata;
+import java.time.Duration;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -77,6 +80,8 @@ public class ReservationOverviewTest  extends TestBase{
 		 
 				 
 		 editres.CheckEditReservationForm();
+		 driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		 
 	
 					

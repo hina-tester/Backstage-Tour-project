@@ -1,8 +1,11 @@
 package com.Tour.qa.testdata;
 
+import java.time.Duration;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -10,6 +13,8 @@ import com.Tour.qa.pages.ChoosDatePage;
 import com.Tour.qa.pages.ChoosTour;
 import com.Tour.qa.pages.HomePage;
 import com.Tour.qa.pages.RegistrationPage;
+
+
 
 public class ChooseDateTest extends TestBase{
 
@@ -40,7 +45,8 @@ public class ChooseDateTest extends TestBase{
         groupsize = Integer.parseInt(prop.getProperty("groupsize"));   
 		 
 		chooseDate = chooseTour.EnterageGroup1(groupsize);
-		
+		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 		
 	}

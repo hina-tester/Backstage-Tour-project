@@ -7,28 +7,24 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-
-
-
-import com.Tour.qa.util.TestUtil;
-import com.relevantcodes.extentreports.ExtentTest;
-
-
 
 public class TestBase {
 	
-	  public static ExtentTest test;
+
 	public static WebDriver driver;
 	public static Properties prop;
+	public static Logger logger;
+	
+	
 //	public  static EventFiringWebDriver  WebEventListener;
 //	public static WebEventListener eventListener;
 	
@@ -47,6 +43,10 @@ public class TestBase {
 	}
 		
 		public static void initialization(){
+			
+			logger = Logger.getLogger("Backstage Tour");
+			PropertyConfigurator.configure("Log4j.properties");
+			
 			String browserName = prop.getProperty("browser");
 			
 			if(browserName.equals("chrome")){
@@ -71,8 +71,21 @@ public class TestBase {
 			driver.get(prop.getProperty("url"));
 		}
 			
-		
-	
+		public void captureScreen(String tname) throws IOException {
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
+			FileUtils.copyFile(source, target);
+			System.out.println("Screenshot taken");
+		}
+		 public static void takeScreenshotAtEndOfTest() throws IOException {
+			  
+			  File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			  String currentDir = System.getProperty("user.dir");
+			  FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" +  System.currentTimeMillis() + ".png"));
+			  
+			  }
+			 
 		
 	}
 	

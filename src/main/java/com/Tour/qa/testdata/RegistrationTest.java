@@ -1,9 +1,12 @@
 package com.Tour.qa.testdata;
 
 
+import java.time.Duration;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -15,6 +18,7 @@ import com.Tour.qa.pages.ForgotPassword;
 import com.Tour.qa.pages.HomePage;
 import com.Tour.qa.pages.LoginPage;
 import com.Tour.qa.pages.RegistrationPage;
+
 
 public class RegistrationTest  extends TestBase{
 
@@ -61,7 +65,8 @@ public class RegistrationTest  extends TestBase{
 			
 			
 			 RegisPage = chooseDate.SelectValidSlot(prop.getProperty("monthYear"), prop.getProperty("date"));
-			
+			 driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 						
 		}
