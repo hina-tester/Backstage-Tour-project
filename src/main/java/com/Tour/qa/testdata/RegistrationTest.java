@@ -339,7 +339,7 @@ public class RegistrationTest  extends TestBase{
 			
 			
 			String text1 = "abc";
-			String text = RegisPage.ChangeGroupSizeToString("abc"); //change int into string
+			String text = RegisPage.ChangeGroupSizeToString(text1); //change int into string
 			
 
 			Assert.assertEquals(text.contains("Please enter a valid number for the size of your group"), true); 
