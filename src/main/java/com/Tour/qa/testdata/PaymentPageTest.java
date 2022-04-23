@@ -1,16 +1,12 @@
 package com.Tour.qa.testdata;
 
-
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.time.Duration;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.Tour.qa.base.TestBase;
 import com.Tour.qa.pages.ChoosDatePage;
 import com.Tour.qa.pages.ChoosTour;
@@ -86,7 +82,7 @@ public class PaymentPageTest extends TestBase {
 					
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate page Title should display as expected")
 	public void validateTitle(){
 		
 		String title = payment.validatePageTitle();
@@ -95,7 +91,8 @@ public class PaymentPageTest extends TestBase {
 		
 	}
 	
-	@Test(priority=2)
+	
+	@Test(priority=2,description = "Validate Quantity should display as expected")
 	public void validateQuantityTest(){
 		
 		String quantity = payment.validateQuantity();
@@ -106,11 +103,11 @@ public class PaymentPageTest extends TestBase {
 	
 	
 
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate Unit should display as expected")
 	public void validateUnit(){
 
 		String unito = "$10.00";// for original
-		String unitd = "$20.00"; //for dup
+	//	String unitd = "$20.00"; //for dup
 		String item = payment.validateUnit();
 		Assert.assertEquals(item,unito);
 		
@@ -119,10 +116,10 @@ public class PaymentPageTest extends TestBase {
 	
 	
 	
-	@Test(priority=4)
+	@Test(priority=4,description = "Validate Tax should display as expected")
 	public void validateTax(){  //display 2 digit after dot the amount without rounding last value
 		
-		double groupsizeb,subTotal;
+		double subTotal;
 		
 		DecimalFormat df = new DecimalFormat("#.##");
 		
@@ -155,7 +152,7 @@ public class PaymentPageTest extends TestBase {
 	
 	
 	
-	@Test(priority=5)
+	@Test(priority=5,description = "Validate Prise should display as expected")
 	public void validatePrice(){
 		
 		double subTotal,quantity,unit;
@@ -182,7 +179,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 
-	@Test(priority=6)
+	@Test(priority=6,description = "Validate Total should display as expected")
 	public void validateTotal(){
 		
 		double  subTotal,quantity,unit;
@@ -209,7 +206,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=7)
+	@Test(priority=7,description = "Validate Payment should display as expected")
 	public void validatePayment(){
 		
 		//still no valid card is available there for this will not pass
@@ -226,7 +223,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=8)
+	@Test(priority=8,description = "Validate, if user click button without providing any data,error should display as expected")
 	public void validatePaymentwithemptyInput(){
 		
 		//still no valid card is available there for this will not pass
@@ -237,7 +234,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=9)
+	@Test(priority=9,description = "Validate,if user provide invalid data for card,error should display as expected")
 	public void validatePaymentwithinvalidInput(){
 		
 		//still no valid card is available there for this will not pass
@@ -248,9 +245,9 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=10)
+	@Test(priority=10,description = "Validate Back link work as expected")
 	
-	public void ValidateBankLink(){
+	public void ValidateBackLink(){
 		
 		
 		String url1= payment.validateBackLink();
@@ -262,7 +259,8 @@ public class PaymentPageTest extends TestBase {
 		
 	
 	}
-
+	
+	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();

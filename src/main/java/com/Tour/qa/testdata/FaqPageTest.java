@@ -3,7 +3,6 @@ package com.Tour.qa.testdata;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -83,7 +82,7 @@ public class FaqPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Page heading display correct")
 	public void validatePageHeading(){
 		
 		boolean  flag =  faq.validatePgaeHeading();
@@ -92,7 +91,7 @@ public class FaqPageTest  extends TestBase{
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate Questions display as expected")
 	public void validateQuestions(){
 		
 		boolean  flag =  faq.validatequestions();

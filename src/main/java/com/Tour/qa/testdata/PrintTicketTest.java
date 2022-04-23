@@ -5,7 +5,6 @@ import java.time.Duration;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -86,130 +85,129 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 	
-	@Test(priority=1)
-	public void validateTitle(){
-		
-		String title = print.validatePageTitle();
-		Assert.assertEquals(title,"IIS 10.0 Detailed Error - 500.0 - Internal Server Error");
-		
-		
-	}
-	
 
-	@Test(priority=2)
+
+	@Test(priority=2,description = "Validate banner should display on page")
 	public void validateBanner(){
 		
 		boolean flag= print.validateBanner();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Banner is displaying on page");
 		
 		
-	}
+	}	
 	
 
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate Top menu should display as expected")
 	public void validatemenu(){
 		
 		boolean flag= print.validatemenu();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Top menu is displaying as expected");
+		Assert.assertFalse(false,"Top menu is missing from page");
 		
 		
 	}
 	
 
 
-	@Test(priority=4)
-	public void validatechooseTour(){
+	@Test(priority=4,description = "Validate choose Tour option from bar menu should work as expected")
+	public void ChooseTourshouldBeClickableFromManuBar(){
 		
-		String title1 = print.validatechooseTour();
+		boolean heading = print.validatechooseTour();
 		
-		Assert.assertEquals(title1,"About the Tour");
-		
-	}
-
-	
-
-
-	@Test(priority=5)
-	public void validateRegistration(){
-		
-		String title1 = print.RegistrationPage();
-		Assert.assertEquals(title1,"Register Your Group");
-		
-		
-	}
-
-
-	@Test(priority=6)
-	public void validatechooseDate(){
-		
-		String title1 =  print.validatechooseDate();
-		
-		Assert.assertEquals(title1,"Choose Your Tour Date");
+	Assert.assertTrue(heading);
 		
 		
 	}
 
 	
 
-	@Test(priority=7)
-	public void validateconfirm(){
+
+	@Test(priority=5,description = "Validate Registration option from menu bar should work as expected")
+	public void RegistrationShouldBeClickableFromMenuBar(){
 		
-		String title1  = print.validateconfirm();
-		Assert.assertEquals(title1,"Review Your Registration");
+		boolean heading = print.RegistrationPage();
+		Assert.assertTrue(heading,"Registration menu work as expected from bar menu");
+		
+	
+		
+		
+	}
+
+
+	@Test(priority=6,description = "Validate choose Date option from bar menu shoul work as expected")
+	public void ChooseDateShouldBeClickableFromMenuBar(){
+		
+		boolean heading =  print.validatechooseDate();
+		Assert.assertTrue(heading,"Choose date option work as expected from bar menu");
+		
+		
+	}
+
+	
+
+	@Test(priority=7,description = "Validate Confirmation and purchase ticket option from menu bar should work as expected")
+	public void ConfirmAndPurchaseShouldBeClickableFromMenuBar(){
+		
+		boolean heading  = print.validateconfirm();
+		Assert.assertTrue(heading,"Confirm and purchase option work as expected from bar menu");
+		
 	
 	}
 
 
 
 	
-	@Test(priority=8)
-	public void tick1(){
+	@Test(priority=8,description = "Validate Tick for Registration option should display as expected")
+	public void TickForRegistrationShouldBeClickable(){
 		
-		String title1  = print.tick1();
-		Assert.assertEquals(title1,"Register Your Group");
+		boolean heading  = print.tick1();
+		Assert.assertTrue(heading,"Tick for Registration completed work as expected");
+		
 	
 	}
 	
 
-	@Test(priority=9)
-	public void tick2(){
+	@Test(priority=9,description = "Validate Tick for  confirm and Purchase page should display as exected")
+	public void TickForConfirmationShouldBeClickable(){
 		
-		String title1  = print.tick2();
-		Assert.assertEquals(title1,"Review Your Registration");
+		boolean heading  = print.tick2();
+		Assert.assertTrue(heading,"Tick for Confirm and purchase page should work as expected");
+		
 	
 	}
+	
 
 
-	@Test(priority=10)
-	public void printTicketmenu() throws InterruptedException{
+	@Test(priority=10,description = "Validate Print ticket option from menu bar should display as expected")
+	public void PrintTicketShouldBeDisplay() throws InterruptedException{
 		
 		boolean flag= print.printTicketmenu();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Print ticket menu works as expeted");
 	
 			}
 
 
-	@Test(priority=11)
-	public void printTicket() throws InterruptedException{
+	@Test(priority=11,description = "Validate print ticket text should display as expected")
+	public void PrintTicketShouldWorkFrmoMenu() throws InterruptedException{
 		
 		boolean flag= print.printTicket();
 		
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag," Print ticket option from menu bar work as expected");
 			
 		
 			}
 
-	@Test(priority=12)
+	@Test(priority=12,description = "Validate page heading  is display as expected")
 	public void validatePageHeading1(){
 		
 		boolean flag= print.validatePageHeading1();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Page heading is display as expected");
 		
 		
 	}
 	
 
-	@Test(priority=13)
+	@Test(priority=13,description = "Validate page heading should display as expected")
 	public void validatePageHeading2(){
 		
 		boolean flag= print.validatePageHeading2();
@@ -220,17 +218,17 @@ public class PrintTicketTest extends TestBase{
 	
 
 
-	@Test(priority=14)
+	@Test(priority=14,description = "Validate Group type display as expected")
 	public void validateOriginal(){
 		
 		boolean flag= print.validateOriginal();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Group type display as expected");
 		
 		
 	}
 	
 
-	@Test(priority=15)
+	@Test(priority=15,description = "Validate Plan Visit button should work as expected")
 	public void validatePlanVisit(){
 		
 		service= print.validatePlanvisit();
@@ -238,67 +236,67 @@ public class PrintTicketTest extends TestBase{
 	}
 
 
-	@Test(priority=16)
+	@Test(priority=16,description = "Validate Email link work as expected")
 	public void validatemailto(){
 		
 		boolean flag= print.validatemailto();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"on clicking emial, mailto open");
 		
 		
 	}
 	
 
-	@Test(priority=17)
+	@Test(priority=17,description = "Validate page heading display as expected")
 	public void validateheading1(){
 		
 		boolean flag= print.validateh1();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"heading display as expected");
 		
 		
 	}
 	
 
-	@Test(priority=18)
+	@Test(priority=18,description = "Validate page heading  should display as expected")
 	public void validateheading2(){
 		
 		boolean flag= print.validateh2();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Heading display as expected");
 		
 		
 	}
 
 
-	@Test(priority=19)
+	@Test(priority=19,description = "Validate page heading should display as expected")
 	public void validateheading3(){
 		
 		boolean flag= print.validateh3();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Heading display as expected");
 		
 		
 	}
 
 
-	@Test(priority=20)
+	@Test(priority=20,description = "Validate page heading should display as expected")
 	public void validateheading4(){
 		
 		boolean flag= print.validateh4();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"heading display as expected");
 		
 		
 	}
 
 
-	@Test(priority=21)
+	@Test(priority=21,description = "Validate Date should display as expected")
 	public void validatedate(){
 		
 		boolean flag= print.datetext();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"date display as expected");
 		
 		
 	}
 
 	
-	@Test(priority=22)
+	@Test(priority=22,description = "Validate link for question")
 	public void validatelinkquestion(){
 		
 		faq =  print.validatelinkquestion();
@@ -308,20 +306,21 @@ public class PrintTicketTest extends TestBase{
 	}
 
 	
-	@Test(priority=23)
+	@Test(priority=23,description = "Validate Card Holder name  should display as expected")
 	public void validatecardHolderName(){
 		
 		String name = print.validatecardHolderName();
 		
 		
 		
-		Assert.assertEquals(prop.getProperty("cardname"),name);
+		Assert.assertEquals(prop.getProperty("cardname"),name,"Name display as expected");
+
 		
 		
 	}
 	
 
-	@Test(priority=24)
+	@Test(priority=24,description = "Validate Card Number should display as expected")
 	public void validatecardnum(){
 		
 		String num = print.validatecardnum();
@@ -352,7 +351,7 @@ public class PrintTicketTest extends TestBase{
 		 
 		
 		
-		Assert.assertEquals(fordig,fordig2);
+		Assert.assertEquals(fordig,fordig2,"Card number displayed as expected");
 		
 		
 	}

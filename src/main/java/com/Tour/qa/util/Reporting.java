@@ -6,10 +6,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
@@ -20,12 +16,14 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.relevantcodes.extentreports.HTMLReporter;
+
 
 public class Reporting extends TestListenerAdapter
 {
-	public ExtentHtmlReporter htmlReporter;
+	public HTMLReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest logger;
 	TestUtil util;
@@ -51,7 +49,7 @@ public class Reporting extends TestListenerAdapter
 		
 		htmlReporter.config().setDocumentTitle("Backstage Tour Test Project"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
-		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);//location of the chart
+	//	htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);//location of the chart
 		htmlReporter.config().setTheme(Theme.DARK);
 	}
 	
@@ -64,18 +62,18 @@ public class Reporting extends TestListenerAdapter
 	public void onTestFailure(ITestResult tr)
 	{
 	
-		 System.out.println("I am in onTestFailure method " +tr.getName() + " failed");
+		 System.out.println("TEST CASE FAILED IS" +tr.getName() + " failed");
 		 
-		 
-		
-		
+	
 		logger=extent.createTest(tr.getName()); // create new entry in th report
 		
 		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
 				
-		
-	    
-        String screenshotPath= util.getScreenshot( "TEST CASE FAILED IS "+tr.getName());
+		//new added line
+		//to add error/exception in extent report
+		logger.log(Status.FAIL, "TEST CASE FAILED IS :"+tr.getMethod().getDescription()); 
+		logger.log(Status.FAIL, "TEST CASE FAILED IS :"+tr.getThrowable()); 
+        String screenshotPath= util.getScreenshot( "TEST CASE FAILED IS: "+tr.getName());
         
 		
 //		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";

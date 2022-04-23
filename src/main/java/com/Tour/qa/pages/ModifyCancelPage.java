@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,8 +13,6 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-
 import com.Tour.qa.base.TestBase;
 
 public class ModifyCancelPage  extends TestBase {
@@ -412,9 +409,10 @@ CancelYes.click();
 Thread.sleep(6000);
          
 
+return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/h1[1]")).isDisplayed();
          //      return driver.findElement(By.xpath("//td[contains(text(),'"+ id +"')]")).isDisplayed();    
 
-			return	driver.findElement(By.xpath("//td[contains(text(),'"+id+"')]")).isDisplayed();
+	//		return	driver.findElement(By.xpath("//td[contains(text(),'"+id+"')]")).isDisplayed();
 
 	       
 
@@ -603,7 +601,6 @@ public void PlaceOrder(String monthYear, String date) throws InterruptedExceptio
 	
 	
 	System.out.println(AvailableNumber);
-	
 	String timing = driver.findElement(By.xpath("//div[@class='fc-day-number'][text()='"+ date+ "']//following::a[1]/div[@class='timeContainer']")).getText();
 
 	System.out.println(timing);

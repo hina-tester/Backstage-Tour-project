@@ -1,5 +1,6 @@
 package com.Tour.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -12,26 +13,26 @@ public class PrintTicket extends TestBase {
 	
 	//Page Factory
 	
-		@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div[1]/div[1]")
 		@CacheLookup
 		WebElement chooseTour;
 		
-		@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div[1]/div[2]")
 		@CacheLookup
 		WebElement chooseDate;
 		
 		
-		@FindBy(xpath="//div[contains(text(),'Registration')]")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div[1]/div[3]")
 		@CacheLookup
 		WebElement Registration;
 		
 		
-		@FindBy(xpath="//div[contains(text(),'Confirm & Purchase')]")
+		@FindBy(xpath="///*[@id=\"content-body\"]/div[1]/div/div/div[2]/div[1]/div[4]")
 		@CacheLookup
 		WebElement confirm;
 		
 		
-		@FindBy(xpath="//div[contains(text(),'Print Ticket')]")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div[1]/div[5]")
 		@CacheLookup
 		WebElement PrintTicket;
 		
@@ -164,42 +165,50 @@ public class PrintTicket extends TestBase {
 					return date.isDisplayed();
 				}
 				
-				public String validatechooseTour(){
+				public boolean validatechooseTour(){
 					
 					chooseTour.click();
+					WebElement heading = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/h1[1]"));
 					
-					return driver.getTitle();
+					return  heading.isDisplayed();
 					
 				}
 				
 
 
-				public String validatechooseDate(){
+				public boolean validatechooseDate(){
 						
 						chooseDate.click();
 						
-						 return driver.getTitle();
+			WebElement heading =	driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/h1[1]"));
+						
+						 return heading.isDisplayed();
+						 
 					
 				}
 				
 				
 
 
-				public String validateconfirm(){
+				public boolean validateconfirm(){
 					
 					
 					confirm.click();
+WebElement heading = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/h1[1]"));
 					
-					return driver.getTitle();
+					return heading.isDisplayed();
+				
 					}
 				
 				
-				public String RegistrationPage (){
+				public boolean RegistrationPage (){
 					
 					
 					Registration.click();
 					
-					return driver.getTitle();
+		WebElement heading = driver.findElement(By.xpath("//body/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/h1[1]"));
+					
+					return heading.isDisplayed();
 					
 				}
 				
@@ -232,19 +241,22 @@ public class PrintTicket extends TestBase {
 				}
 				
 				
-				public String tick1(){
+				public boolean tick1(){
 					
 					Registration.click();
 					
-					return driver.getTitle();
+WebElement heading =driver.findElement(By.xpath("//body/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/h1[1]"));
+					
+					return heading.isDisplayed();
 				}
 				
-				public String tick2(){
+				public boolean tick2(){
 					
 					
 					confirm.click();
+					WebElement heading =driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/h1[1]"));
 					 
-					return driver.getTitle();
+					return heading.isDisplayed();
 				}
 				
 				public boolean printTicket() throws InterruptedException{

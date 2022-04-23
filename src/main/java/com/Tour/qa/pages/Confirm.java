@@ -48,7 +48,7 @@ public class Confirm extends TestBase{
 	@CacheLookup
 	WebElement date;
 	
-	@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div/div[2]/a[1]/b[2]")
+	@FindBy(xpath="//body/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[4]/span[3]")
 	@CacheLookup
 	WebElement groupsize;
 
@@ -462,9 +462,8 @@ public String validateTransport(){
 					}
 
 
-public String validateVnumber(){
-	
-	
+public String validateVehicalnumber(){
+
 	
 	String msg = numerOfVehi.getText();
 	
@@ -481,7 +480,7 @@ public String validateMobile(){
        
        return msg;
 					}
-public String validateZip(){
+public String validateZipCode(){
 	
 	
 	

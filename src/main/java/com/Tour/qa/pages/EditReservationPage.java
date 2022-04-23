@@ -8,8 +8,6 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-
 import com.Tour.qa.base.TestBase;
 
 public class EditReservationPage extends TestBase {
@@ -120,15 +118,11 @@ public class EditReservationPage extends TestBase {
 				
 				
 				public boolean guestFieldOnerrorpage(){
-					
-					
 
 					groupName.clear();
 					vCount.clear();
 					button.click();
-					
-					
-					
+				
 					return guests.isDisplayed();
 				}
 				
@@ -195,8 +189,8 @@ public class EditReservationPage extends TestBase {
 					
 					public boolean CheckEditReservationForm() throws InterruptedException{
 						
-						guests.clear();
-						 guests.sendKeys("1");
+				//		guests.clear();
+				//		 guests.sendKeys("1");
 						 
 						 						
 						 groupName.clear();
@@ -223,6 +217,39 @@ public class EditReservationPage extends TestBase {
 				//	 return new ReservationOverviewPage();
 				
 				}
+					
+					public boolean CheckEditReservationFormWithGuest() throws InterruptedException{
+						
+								guests.clear();
+								 guests.sendKeys("1");
+								 
+								 						
+								 groupName.clear();
+								 groupName.sendKeys("Happy kids");
+								 
+								 needNo.click();
+								 
+							//	 extraneeds.click();
+								 
+								 Comments.sendKeys("this is testing");
+								//Transportation
+									
+									Select dropdownv= new Select(driver.findElement(By.xpath("//*[@id=\"tourTicket_VehicleType\"]")));
+									dropdownv.selectByVisibleText("Van");
+									vCount.clear();
+									vCount.sendKeys("2");
+									
+									button.click();
+									
+									Thread.sleep(8000);
+									
+									return driver.findElement(By.xpath("//h1[contains(text(),'Reservation Overview')]")).isDisplayed();
+								 
+						//	 return new ReservationOverviewPage();
+						
+						}
+							
+						
 					
 					public boolean CheckEditReservationFormWithEmpty() {
 						

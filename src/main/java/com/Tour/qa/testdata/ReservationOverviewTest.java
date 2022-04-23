@@ -4,7 +4,6 @@ import java.time.Duration;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -87,7 +86,7 @@ public class ReservationOverviewTest  extends TestBase{
 					
 	}
 
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Modify Reservation button work as expected")
 	public void validateeModifyButt(){
 		
 		boolean  flag =  reservation.validModifyButt();
@@ -95,39 +94,29 @@ public class ReservationOverviewTest  extends TestBase{
 		
 	}
 	
-	@Test(priority=2)
-	public void validateConfirmButtonLable(){  //if user enter guest number,confirm button title change into purchace ticket and extra text also displayed
-		
-		boolean  flag=  reservation.checkConfirmButtTitle();
-		Assert.assertTrue(flag);
-		
-	
-		
-	}
-	
 	
 
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate Special need section data displayed as per given data by user")
 	public void checkSpecialNeed(){
 		
 		String sneed =  reservation.confirmSpecialNeed();
-		Assert.assertEquals(sneed,"No"); // yes are give on edit reservation page
+		Assert.assertEquals(sneed,"No","Special need option displayed updated"); // No are give on edit reservation page
 		
 		
 	}
 	
 	
-	@Test(priority=4)
+	@Test(priority=4,description = "Validate  Group name display as per updated data given by user")
 	public void validateGroupName(){
 		
 		String gname =  reservation.confirmGroupN();
-		Assert.assertEquals(gname,"Happy kids"); // happy kids are give on edit reservation page
+		Assert.assertEquals(gname,"Happy kids","Group name dispalyed updated"); // happy kids are give on edit reservation page
 		
 		
 	}
 
 	
-	@Test(priority=5)
+	@Test(priority=5,description = "Validate  Page heading displayed as expected")
 	public void validatePageH(){
 		
 		boolean  flag =  reservation.validPageH();
@@ -137,7 +126,7 @@ public class ReservationOverviewTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=6)
+	@Test(priority=6,description = "Validate  after clicking message should displayed 'confirmation has been send'")
 	public void validateConfirmButt(){
 		
 		boolean  flag =  reservation.validconfirm();
@@ -149,15 +138,15 @@ public class ReservationOverviewTest  extends TestBase{
 	
 
 
-	@Test(priority=7)
+	@Test(priority=7,description = "Validate  cancel button should work as expected and reservation should be deleted from modify page")
 	public void vaildateCancleButt(){
 		
 		boolean  flag =  reservation.validCancle(prop.getProperty("id"));
-		Assert.assertTrue(flag);
+	
+		Assert.assertFalse(flag);
 		
 		
 	}
-	
 
 	@AfterMethod
 	public void tearDown(){

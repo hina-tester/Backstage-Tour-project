@@ -4,13 +4,9 @@ package com.Tour.qa.testdata;
 import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.ITestResult;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.Tour.qa.base.TestBase;
 import com.Tour.qa.pages.ChoosTour;
 import com.Tour.qa.pages.HomePage;
@@ -38,7 +34,7 @@ public class HomePageTest  extends TestBase {
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Home page title display as expected")
 	public void HomePageTitleTest(){
 		
 		String title = homePage.validateHomePageTitle();
@@ -47,14 +43,14 @@ public class HomePageTest  extends TestBase {
 	}
 
 	
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate Banner displayed as expected")
 	public void CheckBanner(){
 		boolean flag = homePage.validateBanner();
 		Assert.assertTrue(flag);
 	}
 	
 	
-	@Test(priority=2)
+	@Test(priority=3,description = "Validate  Modify cancle option work as expected")
 	public void CheckModifyCancel(){
 		String title = homePage.CheckModifyCancel();
 		Assert.assertEquals(title, "Logon");
@@ -62,7 +58,7 @@ public class HomePageTest  extends TestBase {
 	
 		
 	
-	@Test(priority=3)
+	@Test(priority=4,description = "Validate purchase ticket option work fine")
 	public void CheckOurchaseTicket(){
 
 		chooseTour = homePage.CheckPurchaseTicket();

@@ -3,9 +3,7 @@ package com.Tour.qa.testdata;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.Tour.qa.base.TestBase;
 import com.Tour.qa.pages.ChoosDatePage;
 import com.Tour.qa.pages.ChoosTour;
@@ -76,7 +74,7 @@ public class PlanYourVisitText extends TestBase { //test calss of cusgtomerPlan 
 	
 					
 	}
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Page title should display as expected")
 	public void validateTitle(){
 		
 		boolean  flag =  planVisit.validatePageHeading();
@@ -85,7 +83,7 @@ public class PlanYourVisitText extends TestBase { //test calss of cusgtomerPlan 
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate Get Paid Direction button work fine")
 	public void validateGetPaidDirectionButton(){
 		
 		boolean  flag =  planVisit.validateGetPaidDirectionButton();
@@ -94,7 +92,7 @@ public class PlanYourVisitText extends TestBase { //test calss of cusgtomerPlan 
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate Get Google Direction button work fine")
 	public void validateGetGoogleDirectionButton(){
 		
 		boolean  flag =  planVisit.validateGetGoogleDirectionButton();

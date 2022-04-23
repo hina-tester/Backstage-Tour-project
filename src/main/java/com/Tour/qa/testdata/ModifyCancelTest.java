@@ -2,7 +2,6 @@ package com.Tour.qa.testdata;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.text.ParseException;
@@ -85,7 +84,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 	
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Correct page displayed")
 	public void validateTitle(){
 		
 		String title = modifyCancel.validatePageTitle();
@@ -97,7 +96,7 @@ public class ModifyCancelTest extends TestBase{
 	
 	
 	
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate Banner displayed as expected")
 	public void validateBanner(){
 		
 		boolean  flag =  modifyCancel.validateBanner();
@@ -108,7 +107,7 @@ public class ModifyCancelTest extends TestBase{
 	
 	
 
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate Main menu displayed as expected")
 	public void validateMenu(){
 		
 		boolean  flag =  modifyCancel.validatemenu();
@@ -119,7 +118,7 @@ public class ModifyCancelTest extends TestBase{
 	
 
 
-	@Test(priority=4)
+	@Test(priority=4,description = "Validate Correct User Name displayed on page")
 	public void validateName(){
 		
 		boolean  flag =  modifyCancel.validatename();
@@ -130,7 +129,7 @@ public class ModifyCancelTest extends TestBase{
 	
 	
 
-	@Test(priority=5)
+	@Test(priority=5,description = "Validate page heading should display as expected")
 	public void validatePageH(){
 		
 		boolean  flag =  modifyCancel.validatePaheHeading();
@@ -140,7 +139,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 
 	
-	@Test(priority=6)
+	@Test(priority=6,description = "Validate logout work fine")
 	public void validatelogout(){
 		
 		String title = modifyCancel.validateLogOut();
@@ -150,7 +149,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 
-	@Test(priority=7)
+	@Test(priority=7,description = "Validate  Review button works fine")
 	public void checkReview() throws InterruptedException {
 		
 		boolean  flag = modifyCancel.CheckReviewButton(prop.getProperty("id"));
@@ -160,7 +159,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 
-	@Test(priority=8)
+	@Test(priority=8,description = "Validate Resend button work fine")
 	public void checkResend() throws InterruptedException {
 		
 		boolean  flag = modifyCancel.CheckResendButton(prop.getProperty("id"));
@@ -169,7 +168,7 @@ public class ModifyCancelTest extends TestBase{
 		
 	}
 	
-	@Test(priority=9)
+	@Test(priority=9,description = "Validate Modify button wokr fine")
 	public void checkModify() throws InterruptedException {
 		
 		boolean  flag = modifyCancel.CheckModifyButton(prop.getProperty("id"));
@@ -179,27 +178,27 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 
-	@Test(priority=10)
-	public void checkCancel() throws InterruptedException {
+	@Test(priority=10,description = "Validate Cancle button work fine")
+	public void CheckCancelButton() throws InterruptedException {
 		
-		modifyCancel= modifyCancel.CheckCancelButton(prop.getProperty("id"));
+		modifyCancel= modifyCancel.CheckCancelButton(prop.getProperty("id2"));
 		
 		
 	}
 	
 
 	
-	@Test(priority=11)
-	public void checkCanceltitle() throws InterruptedException {
+	@Test(priority=11,description = "Validate cancel confirmation window title display correct")
+	public void CheckCancelConfirmationWindowTitle() throws InterruptedException {
 		
-		String msg = modifyCancel.CheckCancelDBoxTitle(prop.getProperty("id"));
+		String msg = modifyCancel.CheckCancelDBoxTitle(prop.getProperty("id2"));
 		Assert.assertEquals(msg,"Confirm Cancellation");
 		
 		
 	}
 	
 		
-	@Test(priority=12)
+	@Test(priority=12,description = "Validate close button on cancel confirmation window work fine")
 	public void checkCloseCancelwin() throws InterruptedException {
 		
 		modifyCancel = modifyCancel.CheckcloseCancelwin(prop.getProperty("id"));
@@ -208,7 +207,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 	
-	@Test(priority=13)
+	@Test(priority=13,description = "Validate delete button on cancle confirmation window work fine")
 	public void checkDeleteTour() throws InterruptedException {
 		
 		boolean  flag = modifyCancel.CheckcDeleteTour(prop.getProperty("id"));
@@ -220,10 +219,10 @@ public class ModifyCancelTest extends TestBase{
 	
 
 
-	@Test(priority=14)
-	public void date() throws InterruptedException, ParseException {  //if date is after or equal, cancel and modify buttond should not displayed
+	@Test(priority=14,description = "Validate id date is current date, user should not able to cancle or edit resevation")
+	public void CheckDateOfReservationShouldDisplayFine() throws InterruptedException, ParseException {  //if date is after or equal, cancel and modify buttond should not displayed
 		
-		boolean  flag = modifyCancel.checkDate(prop.getProperty("id"));
+		boolean  flag = modifyCancel.checkDate(prop.getProperty("id3"));
 		
 		Assert.assertTrue(flag);
 		
@@ -232,7 +231,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 
-	@Test(priority=15)
+	@Test(priority=15,description = "Validate group size should display as expected for selected id")
 	public void printGroupSize(){
 		
 		int title = modifyCancel.returnGroupSize(prop.getProperty("id"));
@@ -243,7 +242,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 
 	
-	@Test(priority=16)
+	@Test(priority=16,description = "Validate total number of table")
 	public void totalNumbersOfTable() throws InterruptedException{
 		
 		int title = modifyCancel.tableTotalrow();
@@ -254,7 +253,7 @@ public class ModifyCancelTest extends TestBase{
 	}
 	
 	
-	@Test(priority=17) //full path from start to end
+	@Test(priority=17,description = "Validate purchace ticket  option from top menu work fine,and an extra record should display on modify page table") //full path from start to end
 	public void PurchaceTicket() throws InterruptedException{
 		
 		
@@ -285,6 +284,7 @@ public class ModifyCancelTest extends TestBase{
 				status = false;
 			}
 	}
+	
 	
 	@AfterMethod
 	public void tearDown(){

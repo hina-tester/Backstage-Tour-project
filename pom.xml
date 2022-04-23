@@ -13,6 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    	<aspectj.version>1.8.10</aspectj.version>
+   	 
 	</properties>
 
 	<build>
@@ -147,7 +148,7 @@
 <dependency>
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
+    <version>1.2.16</version>
 </dependency>
 		
 
@@ -223,8 +224,10 @@
   <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
-      <version>3.1.2</version>
+      <version>3.1.5</version>
   </dependency>
+  
+  
   
   </dependencies>
 </project>

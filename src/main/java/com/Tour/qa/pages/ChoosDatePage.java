@@ -1,9 +1,5 @@
 package com.Tour.qa.pages;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -77,20 +73,17 @@ public class ChoosDatePage extends TestBase{
 		@CacheLookup
 		WebElement NotShaduleYet;
 		
-		@FindBy(xpath="//body/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[5]/div[2]/div[1]/div[1]/div[3]/a[1]/div[1]/span[1]")
-		@CacheLookup
-		WebElement RadioButton;
-		
+				
 
 		@FindBy(xpath="//*[@id=\"navigation-bar\"]/a")
 		WebElement Banner;
 		
 		
-		@FindBy(xpath="//b[contains(text(),'The Deluxe')]")
+		@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]/b[1]")
 		WebElement deluxe;
 		
 
-		@FindBy(xpath="//b[contains(text(),'2')]")
+		@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/a[1]/b[2]")
 		WebElement enterSize2;
 		
 
@@ -209,7 +202,7 @@ public String validatetime(){
 									}
 				
 				
-				public String validateTheDeluxe(){
+				public String validateThOriginal(){
 					
 					String msg = deluxe.getText();
 				       
@@ -229,11 +222,11 @@ public String validatetime(){
 				
 				public boolean SelectInValidSlot(String MonthYear, String date) throws InterruptedException{
 					
-					
-				//	String month = "April 2022";
-				//	String year = "2022";
-				//	String date = "5";
-					
+				/*	
+					String MonthYear = "April 2022";
+					String year = "2022";
+					String date = "5";
+					*/
 					Thread.sleep(2000);
 					while(true)
 					{
@@ -250,30 +243,30 @@ public String validatetime(){
 					{
 						driver.findElement(By.xpath("//*[@id=\"calendarDiv\"]/div[1]/a[2]")).click();
 					}
-					
-					
-					
-				
-							
+												
 					}
 					
 					
-					driver.findElement(By.xpath("//tbody/tr/td/div[1]/div[contains(text(),"+ date+")]")).click();
 					
-					Thread.sleep(2000);
+	//				driver.findElement(By.xpath("//tbody/tr/td/div[1]/div[1][normalize-space()='"+date+"']//following::a[1]")).click();
+					
+String text=	driver.findElement(By.xpath("//div[@class='fc-day-number' and text()='3' ]//following-sibling::div[@class='fc-day-content']/div[@class='no-tours-offered']")).getText();
+		
+					Thread.sleep(5000);
 					
 					 try
 			            {
-			               if(RadioButton.isDisplayed())
+			               if(text.equals("No Tours Offered"))
 			               {
-			               return false;
+			            	   System.out.print("Dates is not Available");
+			               return true;
 			               }
-			               return false;
+			               return true;
 			            }
 			            catch(Exception e)
 			            {
-			                 System.out.print("Dates are not Available");
-			                return true;
+			                 System.out.print("Dates is Available");
+			                return false;
 			            }
 
 					
@@ -291,7 +284,7 @@ public String validatetime(){
 //	String year = "2022";
 //	String date = "2";
 
-					Thread.sleep(2000);
+					Thread.sleep(4000);
 					while(true)
 					{
 					String text = driver.findElement(By.xpath("//*[@id=\"calendarDiv\"]/div[1]/span")).getText();
@@ -310,9 +303,14 @@ public String validatetime(){
 					}
 					
 					
-					driver.findElement(By.xpath("//tbody/tr/td/div[1]/div[contains(text(),"+ date+")]")).click();
-					Thread.sleep(2000);
-					RadioButton.click();
+//	driver.findElement(By.xpath("//div[@class='fc-day-number' and text()='"+date+"']//following-sibling::div[@xpath='1']"));
+				
+				//	WebElement radio=	driver.findElement(By.xpath("//tbody/tr/td/div[1]/div[1][normalize-space()='"+ date +"']//following::a[1]"));
+					
+	//			driver.findElement(By.xpath("//tbody/tr/td/div[1]/div[1][normalize-space()='"+ date+"']//following::a[1]")).click();
+					Thread.sleep(7000);
+					driver.findElement(By.xpath("//div[@class='fc-day-number' and text()='"+date+"']//following::a[1]/div[@class='timeContainer']")).click();
+				//	radio.click();
 					
 				 return new RegistrationPage();
 	}

@@ -3,7 +3,6 @@ package com.Tour.qa.testdata;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -77,7 +76,7 @@ public class HeaderFooterTest  extends TestBase{
 	}
 	
 
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Home link work fine")
 	public void validateeHomelink(){
 		
 		boolean flag =  hf.validatehomeLink();
@@ -85,7 +84,7 @@ public class HeaderFooterTest  extends TestBase{
 	}
 	
 
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate Purchase ticket option from top menu work fine")
 	public void validateePurchacelink(){
 		
 		boolean flag =  hf.validatehomeLink();
@@ -94,7 +93,7 @@ public class HeaderFooterTest  extends TestBase{
 	}
 	
 
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate Plan Visit option from topm menu work fine")
 	public void validateePlanvisitlink(){
 		
 		boolean flag =   hf.validatePlanYourVisitLink();
@@ -104,7 +103,7 @@ public class HeaderFooterTest  extends TestBase{
 	
 
 
-	@Test(priority=4)
+	@Test(priority=4,description = "Validate Modify/Cancle option from top menu work fine")
 	public void validateeMOdifylink(){
 		
 		boolean flag =   hf.validateModifyLink();
@@ -114,7 +113,7 @@ public class HeaderFooterTest  extends TestBase{
 	
 
 
-	@Test(priority=5)
+	@Test(priority=5,description = "Validate Resend option from top menu work fine")
 	public void validateResendlink(){
 		
 		boolean flag =   hf.validateResendLink();
@@ -126,7 +125,7 @@ public class HeaderFooterTest  extends TestBase{
 
 	
 
-	@Test(priority=6)
+	@Test(priority=6,description = "Validate FAQ option from top menu work fine")
 	public void validateFAQLink(){
 		
 		boolean flag =   hf.validateFAQLink();
@@ -136,7 +135,7 @@ public class HeaderFooterTest  extends TestBase{
 	
 	
 	
-	@Test(priority=7)
+	@Test(priority=7,description = "Validate Link from footer work fine")
 	public void validateChickLink(){
 		
 		boolean flag =  hf.validateChickLink();
@@ -144,7 +143,7 @@ public class HeaderFooterTest  extends TestBase{
 		
 		
 	}
-	@Test(priority=8)
+	@Test(priority=8,description = "Validate  leagle link form footer work fine")
 	public void validateLeagleLink(){
 		
 		boolean flag =  hf.validateLegalLink();
@@ -154,7 +153,7 @@ public class HeaderFooterTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=9)
+	@Test(priority=9,description = "Validate Privacy link from footer work fine")
 	public void validatePriLink(){
 		
 		boolean flag =  hf.validatePrivacyLink();

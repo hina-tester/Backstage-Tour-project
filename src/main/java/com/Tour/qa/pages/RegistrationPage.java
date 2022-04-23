@@ -8,10 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import com.Tour.qa.base.TestBase;
@@ -413,15 +410,13 @@ public class RegistrationPage extends TestBase{
 					
 	public String CheckFillData()  {
 		
-		
-	
-						
-						fname.sendKeys("fname");
+					fname.sendKeys("fname");
 						lname.sendKeys("lname");
 						
-						String username = "fname";
+						String username = "test";
 			Random randomGenerator = new Random();  
-				int randomInt = randomGenerator.nextInt(1000);  
+				int randomInt = randomGenerator.nextInt(100000);  
+				int randomInt1 = randomGenerator.nextInt(1000);  
 						
 				String  myemail = (randomInt + username + "@gmail.com");
 				
@@ -484,10 +479,10 @@ public class RegistrationPage extends TestBase{
 						}
 						
 						
-						String title = driver.getTitle();
+			String heading=	driver.findElement(By.xpath("//h1[contains(text(),'CONFIRM RESERVATION AND PURCHASE TICKET')]")).getText();
 						
 						
-						return title;
+						return heading;
 	
 						
 						
@@ -669,7 +664,7 @@ public boolean fillInvalidForm() throws InterruptedException {
 		}	
 
 					
-public String invalidmobile(String mob) throws InterruptedException{
+public String invalidmobileWithStrign(String mob) throws InterruptedException{
 			
 			fname.sendKeys("111");
 			lname.sendKeys("222");
@@ -717,16 +712,16 @@ public String invalidmobile(String mob) throws InterruptedException{
 									
 			submitbut.click();
 			Thread.sleep(5000);
+			String error =	driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[8]/div[1]/span[1]/div[1]/p[1]")).getText();
 			
 			
-			String error = mobileinva.getText();
+	//		String error = mobileinva.getText();
 			
 			return error;  //return error message on registration page
 
 			
 		}	
-
-public String intigermobile(String mob) throws InterruptedException{  //invalid ph = 899999
+public String invalidmobile2(String mob) throws InterruptedException{
 	
 	fname.sendKeys("111");
 	lname.sendKeys("222");
@@ -774,6 +769,64 @@ public String intigermobile(String mob) throws InterruptedException{  //invalid 
 							
 	submitbut.click();
 	Thread.sleep(5000);
+	String error =	driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[8]/div[1]/span[1]/div[1]/p[1]")).getText();
+	
+	
+//		String error = mobileinva.getText();
+	
+	return error;  //return error message on registration page
+
+	
+}	
+
+public String intigermobile(int mob) throws InterruptedException{  //invalid ph = 899999
+	
+	fname.sendKeys("111");
+	lname.sendKeys("222");
+	newemail.sendKeys("qwkhire3@gmail.com");
+	cemail.sendKeys("qwkhire3@gmail.com");
+	pw.sendKeys("nnn");// characters, letters and digits
+	cpw.sendKeys("nnn");
+	zipcode.sendKeys("aaa");// be 5 digits
+	mobile.sendKeys(String.valueOf(mob));; //must be 10 digit
+	
+//Select dropdown1 = new Select(dropdown);  //from where we hear
+//	dropdown1.selectByVisibleText("CFA Mobile App");  
+	
+	//Group Information
+	
+	groupSizef.sendKeys(groupSize.getText());
+	
+	nameofgroup.sendKeys("new group");
+	
+	//Type of group
+	
+	driver.findElement(By.xpath("//input[@id='tourTicket_IsFamilyWithKids']")).click(); //family with kids
+	
+	//Radio button select
+	
+
+	Actions action = new Actions(driver);
+	action.moveToElement(radiobutno);
+	action.perform();
+						
+	radiobutno.click();
+	
+	commentbox.sendKeys("This is comment");
+	
+	//Transportation
+	
+	Select dropdownv= new Select(driver.findElement(By.xpath("//select[@id='tourTicket_VehicleType']")));
+	dropdownv.selectByVisibleText("Car");
+	
+	textboxv.sendKeys("a");
+	
+	//Weapons Policy
+	
+	weapoinPolicycb.click();
+							
+	submitbut.click();
+	Thread.sleep(5000);
 	
 	
 	String error = mobileinva.getText();
@@ -783,14 +836,14 @@ public String intigermobile(String mob) throws InterruptedException{  //invalid 
 	
 }	
 
-public String checkPWwithin(String pwi) throws InterruptedException{  //invalid ph = 899999
+public String checkPWwithin(int pwi) throws InterruptedException{  //invalid ph = 899999
 	
 	fname.sendKeys("111");
 	lname.sendKeys("222");
 	newemail.sendKeys("qwkhire3@gmail.com");
 	cemail.sendKeys("qwkhire3@gmail.com");
-	pw.sendKeys(pwi);// enter only int
-	cpw.sendKeys(pwi);
+	pw.sendKeys(String.valueOf(pwi));// enter only int
+	cpw.sendKeys(String.valueOf(pwi));
 	zipcode.sendKeys("aaa");// be 5 digits
 	mobile.sendKeys("88888");//t be 10 digit
 	
@@ -896,10 +949,11 @@ public String checkPWwithst(String pwi) throws InterruptedException{  //invalid 
 	
 }	
 
-public String CheckFname(String name) throws InterruptedException {
+public String CheckFname(int name1) throws InterruptedException {
 	
-	fname.sendKeys(name); //invalid name
-	lname.sendKeys("222");
+
+	fname.sendKeys(String.valueOf(name1)); //invalid name
+	lname.sendKeys(String.valueOf(name1));
 	newemail.sendKeys("qwkhire3@gmail.com");
 	cemail.sendKeys("qwkhire3@gmail.com");
 	pw.sendKeys("123asd");
@@ -909,7 +963,7 @@ public String CheckFname(String name) throws InterruptedException {
 	
 //Select dropdown1 = new Select(dropdown);  //from where we hear
 //	dropdown1.selectByVisibleText("CFA Mobile App");  
-	
+
 	//Group Information
 	
 	groupSizef.sendKeys(groupSize.getText());
@@ -945,6 +999,8 @@ public String CheckFname(String name) throws InterruptedException {
 	submitbut.click();
 	Thread.sleep(5000);
 	
+
+	
 	WebElement l =driver.findElement(By.tagName("body"));
 	
 	String search = l.getText();
@@ -956,10 +1012,10 @@ public String CheckFname(String name) throws InterruptedException {
 	
 }	
 
-public String CheckLname(String name) throws InterruptedException {
+public String CheckLname(int name) throws InterruptedException {
 	
-	fname.sendKeys(name); //invalid name
-	lname.sendKeys(name);
+	fname.sendKeys(String.valueOf(name));//invalid name
+	lname.sendKeys(String.valueOf(name));
 	newemail.sendKeys("qwkhire4@gmail.com");
 	cemail.sendKeys("qwkhire4@gmail.com");
 	pw.sendKeys("123asd");
@@ -1128,7 +1184,7 @@ String error = pwNotmatch.getText();
 }	
 
 
-public String vehiclesinvalidg(String vehi) throws InterruptedException{
+public String invalidVehical(String vehi) throws InterruptedException{
 	
 	fname.sendKeys("name");
 	lname.sendKeys("name");
@@ -1237,16 +1293,17 @@ public String ChangeGroupSizeToString(String gs) throws InterruptedException{
 	submitbut.click();
 	Thread.sleep(5000);
 	
-WebElement l =driver.findElement(By.tagName("body"));
 	
-	String search = l.getText();
-	
-	
-	return search;
-	
-	
-}	
+String msg=	  driver.findElement(By.xpath("//span[contains(text(),'Please enter a valid number for the size of your g')]")).getText();
 
+//WebElement l =driver.findElement(By.tagName("body"));
+	
+	
+	System.out.println(msg);
+	return msg;
+	
+	
+}
 
 
 public void CheckMandatoryFields() throws InterruptedException{
@@ -1292,7 +1349,12 @@ public void CheckMandatoryFields() throws InterruptedException{
 					
 						Thread.sleep(5000);
 						
-						return invalidemail.isDisplayed();
+
+						weapoinPolicycb.click();
+												
+						submitbut.click();
+						
+						return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[3]/div[1]/span[1]/div[1]/p[1]")).isDisplayed();
 						
 					}
 					

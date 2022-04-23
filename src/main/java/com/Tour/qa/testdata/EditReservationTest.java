@@ -5,7 +5,6 @@ import java.time.Duration;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -82,47 +81,47 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Page heading displayed as expected")
 	public void valiPageHeading(){
 		
 		boolean  flag =  editReservation.PageHeading();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Heading displayed as expected");
 		
 		
 	}
 	
 
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate Date display as expected")
 	public void validate(){
 		
 		boolean  flag =  editReservation.date();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Date displayed as expected");
 		
 		
 	}
 	
 
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate time of choosen slot display as expected")
 	public void validatetime(){
 		
 		boolean  flag =  editReservation.time();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Time of choosen date displayed as expected");
 		
 		
 	}
 	
 
-	@Test(priority=4)
-	public void validateDateLink(){
+	@Test(priority=4,description = "Validate Edit Date link should work as expected")
+	public void validateEditDateLink(){
 		
 		boolean  flag =  editReservation.EditDateLink();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Edit date link work as expected");
 		
 		
 	}
 	
 
-	@Test(priority=5)
+	@Test(priority=5,description = "Validate Group size display as expected")
 	public void validateGroupSize(){
 		
 	 editReservation.GroupSizeLock();
@@ -132,17 +131,17 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=6)
+	@Test(priority=6,description = "Validate Special needs section should only display when 'yes' is selected")
 	public void validatesNeed(){
 		
 		boolean  flag = editReservation.CheckSpecialNeedOption();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"Special need options displayed when 'yes' option is selected");
 		
 	}
 	
 
 
-	@Test(priority=7)
+	@Test(priority=7,description = "Validate 'Visit Guest Services for more information' link should work as expected")
 	public void validalink(){
 		
 		service= editReservation.guestLink();
@@ -151,33 +150,36 @@ public class EditReservationTest extends TestBase {
 	}
 	
 	
-	@Test(priority=8)  //check edit form by fillinf valid data and clicking button
+	@Test(priority=8,description = "Edit the form fields and validate form should updated successfully")  //check edit form by fillinf valid data and clicking button
 	
 	public void validaeditForm() throws InterruptedException{
 		
 		boolean  flag =  editReservation.CheckEditReservationForm();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"From updated successfully");
 		
 		
 	}
 
 
-	@Test(priority=9)
+	@Test(priority=9,description = "Error should be display on clicking button without providing any data on form")
 	public void validaedtiEmptyForm(){
 		
 		boolean  flag =  editReservation.CheckEditReservationFormWithEmpty();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag,"errors displayed for mandatory fields");
 		
 		
 	}
 	
 	
 
-	@Test(priority=10)
+	@Test(priority=10,description = "Validate 'Additional Guests' should display on clicking submit button on leaving empty or providing invalid input for group name and vehical number field")
 	public void GuestFieldOnErrorPage(){
 		
 		boolean  flag =  editReservation.guestFieldOnerrorpage();
-		Assert.assertTrue(flag);
+		
+		System.out.println(flag);
+		
+		Assert.assertTrue(flag,"Additional Guests field display on clicking button on empty fields ");
 		
 		
 	}

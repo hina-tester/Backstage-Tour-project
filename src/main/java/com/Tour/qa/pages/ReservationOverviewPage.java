@@ -13,11 +13,6 @@ import com.Tour.qa.base.TestBase;
 public class ReservationOverviewPage  extends TestBase{
 	
 	
-
-	//Page Factory
-	
-
-
 	//Page Factory
 	
 		
@@ -57,18 +52,18 @@ public class ReservationOverviewPage  extends TestBase{
 		@CacheLookup
 		WebElement modifyButt;
 		
-		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/h1")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/h1")
 		@CacheLookup
 		WebElement pageH;
 		
 		
 				
-		@FindBy(xpath="//input[@id='confirm-registration-button']")
+		@FindBy(xpath="//*[@id=\"confirm-registration-button\"]")
 		@CacheLookup
 		WebElement confirmbutt;
 		
 		
-		@FindBy(xpath="//a[@id='cancel-registration-button']")
+		@FindBy(xpath="//*[@id=\"cancel-registration-button\"]")
 		@CacheLookup
 		WebElement cancelButt;
 		
@@ -107,11 +102,10 @@ public class ReservationOverviewPage  extends TestBase{
 				}
 
 				//Actions:
-				@SuppressWarnings("deprecation")
+			
 				public boolean validPageH(){
 					
-					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-					
+				
 					return pageH.isDisplayed();
 					
 				}
@@ -125,7 +119,7 @@ public class ReservationOverviewPage  extends TestBase{
 				}
 				
 				
-				
+			
 	public boolean checkConfirmButtTitle(){  //If we enter guest,confirm button title becom purchase,which is wrong
 					
 					
@@ -152,7 +146,18 @@ public class ReservationOverviewPage  extends TestBase{
 					
 					driver.navigate().to("http://tours.chick-fil-adev.com/tours/Reservation/ModifyTickets");
 					
-					return	driver.findElement(By.xpath("//td[contains(text(),'"+id+"')]")).isDisplayed();
+					
+				
+				       
+					try {
+				       driver.findElement(By.xpath("//td[contains(text(),'"+id+"')]"));
+				        return true;
+				    } catch (org.openqa.selenium.NoSuchElementException e) {
+				        return false;
+				    }
+
+					
+			//		return	!record.isDisplayed();
 			        
 					
 				//	return canceltitle.isDisplayed();

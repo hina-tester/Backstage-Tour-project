@@ -3,7 +3,6 @@ package com.Tour.qa.testdata;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Tour.qa.base.TestBase;
@@ -45,7 +44,7 @@ public class ForgotPasswordTest extends TestBase{
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,description = "Validate Page title display correct")
 	public void loginPageTitleTest(){
 		boolean flag = forgot.ValidatePageH();
 		Assert.assertTrue(flag);
@@ -53,7 +52,7 @@ public class ForgotPasswordTest extends TestBase{
 	
 
 	
-	@Test(priority=2)
+	@Test(priority=2,description = "Validate  Resetpage work fine with valid email")
 	public void ValidateResetPWWithValidEmail(){
 		boolean flag = forgot.ValidateResetPWWithValidEmail();
 		Assert.assertTrue(flag);
@@ -62,7 +61,7 @@ public class ForgotPasswordTest extends TestBase{
 
 
 	
-	@Test(priority=3)
+	@Test(priority=3,description = "Validate that proper error message should display on Reset password with invalid email")
 	public void ValidateResetPWWithInValidEmail(){
 		boolean flag = forgot.ValidateResetPWWithInValidEmail();
 		Assert.assertTrue(flag);

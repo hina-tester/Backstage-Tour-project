@@ -5,14 +5,14 @@ import java.time.Duration;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.Tour.qa.base.TestBase;
 import com.Tour.qa.pages.ChoosDatePage;
 import com.Tour.qa.pages.ChoosTour;
 import com.Tour.qa.pages.HomePage;
 import com.Tour.qa.pages.RegistrationPage;
+import com.aventstack.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 
 
@@ -23,6 +23,8 @@ public class ChooseDateTest extends TestBase{
 	ChoosTour chooseTour;
 	ChoosDatePage chooseDate;
 	RegistrationPage RegisPage;
+	 ExtentTest extentTest;
+	 ExtentReports extent;
 	
 
 	public ChooseDateTest(){
@@ -34,11 +36,12 @@ public class ChooseDateTest extends TestBase{
 	@BeforeMethod
 	public void setUp(){
 		initialization();
+		
 		chooseTour = new ChoosTour();	
 		homePage = new HomePage();
 		RegisPage = new RegistrationPage();
 		chooseTour = homePage.CheckPurchaseTicket();
-		
+		 
 
 		int groupsize ;
 		
@@ -51,16 +54,17 @@ public class ChooseDateTest extends TestBase{
 		
 	}
 	
-	@Test(priority=1)
+	
+	@Test(priority=1 ,description = "Verify Page title is displaying correct")
 	public void CheckPageTitle(){
-		
+	//	extentTest = extent.startTest("CheckPageTitle");
 		
 		String title = chooseDate.validatePageTitle();
 		Assert.assertEquals(title, "Choose Your Tour Date");
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2 ,description = "Verify Page Banner is display or not")
 	public void validateBanne(){
 		boolean flag = chooseDate.validateBanner();
 		Assert.assertTrue(flag);
@@ -68,14 +72,14 @@ public class ChooseDateTest extends TestBase{
 	
 	
 	
-	@Test(priority=3)
+	@Test(priority=3,description = " Verify Page Heading is displaying correct")
 	public void validateHeading(){
 		boolean flag = chooseDate.validatePageHeading();
 		Assert.assertTrue(flag);
 	}
 	
 	
-	@Test(priority=4)
+	@Test(priority=4,description = "Validate that user successfully navigate on next page")
 	public void validateChoosFromMenu(){
 		chooseTour = chooseDate.validateChooseTourMenuOption();
 			
@@ -83,7 +87,7 @@ public class ChooseDateTest extends TestBase{
 	}
 	
 
-	@Test(priority=5)
+	@Test(priority=5,description = "validate the group type is displaying correct")
 	public void validateTheOriginal(){
 				
 		String text = chooseDate.validateTheOriginal();
@@ -94,7 +98,7 @@ public class ChooseDateTest extends TestBase{
 	
 	
 	
-	@Test(priority=6)
+	@Test(priority=6,description = "validate that Group Size is displaying correct")
 	public void validateGroupSize(){
 				
 		String text = chooseDate.validateGroupSize();
@@ -102,33 +106,27 @@ public class ChooseDateTest extends TestBase{
 		
 		
 	}
+	
 		
-	@Test(priority=7)
+	@Test(priority=7,description = "Validate that user can navigate successfully by selecting valid date of available slot")
 	public void SelectValidSlotTest() throws InterruptedException{
 				
 		RegisPage = chooseDate.SelectValidSlot(prop.getProperty("monthYear"), prop.getProperty("date"));
 		
 	}
 	
+	
 
-	@Test(priority=8)
+	@Test(priority=8,description = "Validate that message displayed for not available slot")
 	public void SelectInValidSlot() throws InterruptedException{
 				
-		boolean flag = chooseDate.SelectInValidSlot("April 2022","7");
+		boolean flag = chooseDate.SelectInValidSlot("May 2022","3");
 		Assert.assertTrue(flag);
 		
 	}
 	
-	@Test(priority=9)
-	public void validateTheDeluxe(){
-				
-		String text = chooseDate.validateTheDeluxe();
-		Assert.assertEquals(text, prop.getProperty("tourname2"));
-		
-		
-	}
 	
-	@Test(priority=10)
+	@Test(priority=10 ,description = "Validate Group Size display correct based on give data on previous page")
 	public void validateGroupSize2(){
 				
 		String text = chooseDate.validateGroupSize2();
@@ -136,6 +134,7 @@ public class ChooseDateTest extends TestBase{
 		
 		
 	}
+	
 
 	@AfterMethod
 	public void tearDown(){
