@@ -11,7 +11,7 @@ import com.Tour.qa.pages.ChoosDatePage;
 import com.Tour.qa.pages.ChoosTour;
 import com.Tour.qa.pages.HomePage;
 import com.Tour.qa.pages.RegistrationPage;
-import com.aventstack.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 

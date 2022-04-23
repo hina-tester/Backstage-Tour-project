@@ -13,7 +13,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.Tour.qa.base.TestBase;
 
-import io.qameta.allure.Attachment;
 
 
 public class TestUtil extends TestBase{

@@ -15,12 +15,14 @@ D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\Confirm.
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\EditReservationPage.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\HomePageTest.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\HeaderFooterTest.java
-D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\util\XLUtils.java
+D:\Selenium\work space\TourChickFilAdev\src\main\java\com\qa\ExtandReportListner\ExtentManager.java
+D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\ReservationOverviewTest2.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\ForgotPassword.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\CancelReservation.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\RegistrationPage.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\ConfirmationPageTest.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\ResendConfPage.java
+D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\ReservationOverview2page.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\PlanYourVisitText.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\util\TestUtil.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\RegistrationTest.java
@@ -31,6 +33,7 @@ D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\Modif
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\HomePage.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\ChoosTour.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\FAQ.java
+D:\Selenium\work space\TourChickFilAdev\src\main\java\com\qa\ExtandReportListner\ExtentTestManager.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\testdata\ForgotPasswordTest.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\base\TestBase.java
 D:\Selenium\work space\TourChickFilAdev\src\main\java\com\Tour\qa\pages\ReservationOverviewPage.java

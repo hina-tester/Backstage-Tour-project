@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Chick-fil-A® Backstage Tour Automation Test" duration-ms="97073" started-at="2022-04-23T11:08:39 PKT" finished-at="2022-04-23T11:10:16 PKT">
+  <suite name="Chick-fil-A® Backstage Tour Automation Test" duration-ms="276694" started-at="2022-04-23T21:15:11 PKT" finished-at="2022-04-23T21:19:48 PKT">
     <groups>
     </groups>
-    <test name="Chick-fil-A®Backstage Tour Test Cases" duration-ms="97073" started-at="2022-04-23T11:08:39 PKT" finished-at="2022-04-23T11:10:16 PKT">
+    <test name="Chick-fil-A®Backstage Tour Test Cases" duration-ms="276694" started-at="2022-04-23T21:15:11 PKT" finished-at="2022-04-23T21:19:48 PKT">
       <class name="com.Tour.qa.testdata.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="setUp" is-config="true" duration-ms="21944" started-at="2022-04-23T11:08:40 PKT" finished-at="2022-04-23T11:09:02 PKT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="setUp" is-config="true" duration-ms="60855" started-at="2022-04-23T21:15:11 PKT" finished-at="2022-04-23T21:16:12 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="loginPageTitleTest" duration-ms="67" started-at="2022-04-23T11:09:02 PKT" description="Validate Login page title display as expected" finished-at="2022-04-23T11:09:02 PKT">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="loginPageTitleTest" duration-ms="48" started-at="2022-04-23T21:16:12 PKT" description="Validate Login page title display as expected" finished-at="2022-04-23T21:16:12 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="tearDown" is-config="true" duration-ms="775" started-at="2022-04-23T11:09:02 PKT" finished-at="2022-04-23T11:09:03 PKT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="tearDown" is-config="true" duration-ms="858" started-at="2022-04-23T21:16:12 PKT" finished-at="2022-04-23T21:16:13 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="setUp" is-config="true" duration-ms="13112" started-at="2022-04-23T11:09:03 PKT" finished-at="2022-04-23T11:09:16 PKT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="setUp" is-config="true" duration-ms="40155" started-at="2022-04-23T21:16:13 PKT" finished-at="2022-04-23T21:16:53 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckLogo()[pri:2, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="CheckLogo" duration-ms="69" started-at="2022-04-23T11:09:16 PKT" description="Validate  logo should display as expected" finished-at="2022-04-23T11:09:16 PKT">
+        <test-method status="PASS" signature="CheckLogo()[pri:2, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="CheckLogo" duration-ms="130" started-at="2022-04-23T21:16:53 PKT" description="Validate  logo should display as expected" finished-at="2022-04-23T21:16:53 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="tearDown" is-config="true" duration-ms="863" started-at="2022-04-23T11:09:16 PKT" finished-at="2022-04-23T11:09:17 PKT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="tearDown" is-config="true" duration-ms="798" started-at="2022-04-23T21:16:53 PKT" finished-at="2022-04-23T21:16:54 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="setUp" is-config="true" duration-ms="12731" started-at="2022-04-23T11:09:17 PKT" finished-at="2022-04-23T11:09:30 PKT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="setUp" is-config="true" duration-ms="44726" started-at="2022-04-23T21:16:54 PKT" finished-at="2022-04-23T21:17:39 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="loginTest" duration-ms="2073" started-at="2022-04-23T11:09:30 PKT" description="Validate login button work fine and Modify/cancle page should be displayed after login" finished-at="2022-04-23T11:09:32 PKT">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="loginTest" duration-ms="11482" started-at="2022-04-23T21:17:39 PKT" description="Validate login button work fine and Modify/cancle page should be displayed after login" finished-at="2022-04-23T21:17:50 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="tearDown" is-config="true" duration-ms="731" started-at="2022-04-23T11:09:32 PKT" finished-at="2022-04-23T11:09:33 PKT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="tearDown" is-config="true" duration-ms="1019" started-at="2022-04-23T21:17:50 PKT" finished-at="2022-04-23T21:17:51 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="setUp" is-config="true" duration-ms="12412" started-at="2022-04-23T11:09:33 PKT" finished-at="2022-04-23T11:09:45 PKT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="setUp" is-config="true" duration-ms="68595" started-at="2022-04-23T21:17:51 PKT" finished-at="2022-04-23T21:19:00 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTestInvalidEmail(java.lang.reflect.Method)[pri:4, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="loginTestInvalidEmail" duration-ms="979" started-at="2022-04-23T11:09:45 PKT" description="Validate error should be displayed on providing invalid email" finished-at="2022-04-23T11:09:46 PKT">
+        <test-method status="PASS" signature="loginTestInvalidEmail(java.lang.reflect.Method)[pri:4, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="loginTestInvalidEmail" duration-ms="1201" started-at="2022-04-23T21:19:00 PKT" description="Validate error should be displayed on providing invalid email" finished-at="2022-04-23T21:19:01 PKT">
           <params>
             <param index="0">
               <value>
@@ -58,15 +58,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestInvalidEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="tearDown" is-config="true" duration-ms="784" started-at="2022-04-23T11:09:46 PKT" finished-at="2022-04-23T11:09:47 PKT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="tearDown" is-config="true" duration-ms="797" started-at="2022-04-23T21:19:01 PKT" finished-at="2022-04-23T21:19:02 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="setUp" is-config="true" duration-ms="16762" started-at="2022-04-23T11:09:47 PKT" finished-at="2022-04-23T11:10:04 PKT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="setUp" is-config="true" duration-ms="27467" started-at="2022-04-23T21:19:02 PKT" finished-at="2022-04-23T21:19:30 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageOnEmptyEmailField()[pri:5, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="loginPageOnEmptyEmailField" duration-ms="11448" started-at="2022-04-23T11:10:04 PKT" description="Validate error should be displayed on providing no email" finished-at="2022-04-23T11:10:15 PKT">
+        <test-method status="FAIL" signature="loginPageOnEmptyEmailField()[pri:5, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="loginPageOnEmptyEmailField" duration-ms="16644" started-at="2022-04-23T21:19:30 PKT" description="Validate error should be displayed on providing no email" finished-at="2022-04-23T21:19:46 PKT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Email/Password is incorrect.')]"}
@@ -75,9 +75,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea2fa0d3a5cc88e20289de90b138c411, findElement {using=xpath, value=//span[contains(text(),'Email/Password is incorrect.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56627/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea2fa0d3a5cc88e20289de90b138c411]]>
+Command: [f7377f994a910ad128ee93372622bf55, findElement {using=xpath, value=//span[contains(text(),'Email/Password is incorrect.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53312/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f7377f994a910ad128ee93372622bf55]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Email/Password is incorrect.')]"}
@@ -86,9 +86,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea2fa0d3a5cc88e20289de90b138c411, findElement {using=xpath, value=//span[contains(text(),'Email/Password is incorrect.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56627/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea2fa0d3a5cc88e20289de90b138c411
+Command: [f7377f994a910ad128ee93372622bf55, findElement {using=xpath, value=//span[contains(text(),'Email/Password is incorrect.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53312/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f7377f994a910ad128ee93372622bf55
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -143,7 +143,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageOnEmptyEmailField -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@4a9e6faf]" name="tearDown" is-config="true" duration-ms="804" started-at="2022-04-23T11:10:16 PKT" finished-at="2022-04-23T11:10:16 PKT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@3d3fcdb0]" name="tearDown" is-config="true" duration-ms="1141" started-at="2022-04-23T21:19:47 PKT" finished-at="2022-04-23T21:19:48 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

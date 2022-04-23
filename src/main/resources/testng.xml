@@ -16,9 +16,9 @@
 	
 		<classes>
 			
-			<class name="com.Tour.qa.testdata.HomePageTest"></class>
-			<class name="com.Tour.qa.testdata.LoginTest"></class>
- 			<class name="com.Tour.qa.testdata.ChooseTourTest"></class>
+	 		<class name="com.Tour.qa.testdata.HomePageTest"></class>    
+ 		<class name="com.Tour.qa.testdata.LoginTest"></class> 
+ 	 		<class name="com.Tour.qa.testdata.ChooseTourTest"></class>
 			<class name="com.Tour.qa.testdata.ChooseDateTest"></class>
 			<class name="com.Tour.qa.testdata.RegistrationTest"></class>
 			<class name="com.Tour.qa.testdata.ConfirmationPageTest"></class>
@@ -32,7 +32,7 @@
 			<class name="com.Tour.qa.testdata.FaqPageTest"></class>
 			<class name="com.Tour.qa.testdata.ForgotPasswordTest"></class>
 			<class name="com.Tour.qa.testdata.HeaderFooterTest"></class>	 				  
-			   
+			    
 		
 		</classes>
 	</test>

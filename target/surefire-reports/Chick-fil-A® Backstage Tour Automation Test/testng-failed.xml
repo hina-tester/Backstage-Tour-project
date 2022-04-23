@@ -6,21 +6,13 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Chick-fil-A®Backstage Tour Test Cases(failed)">
     <classes>
-      <class name="com.Tour.qa.testdata.ForgotPasswordTest">
+      <class name="com.Tour.qa.testdata.ReservationOverviewTest2">
         <methods>
           <include name="tearDown"/>
-          <include name="ValidateResetPWWithInValidEmail"/>
+          <include name="checkPurchanseTicketButton"/>
           <include name="setUp"/>
-          <include name="ValidateResetPWWithValidEmail"/>
         </methods>
-      </class> <!-- com.Tour.qa.testdata.ForgotPasswordTest -->
-      <class name="com.Tour.qa.testdata.HeaderFooterTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="validateResendlink"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.HeaderFooterTest -->
+      </class> <!-- com.Tour.qa.testdata.ReservationOverviewTest2 -->
     </classes>
   </test> <!-- Chick-fil-A®Backstage Tour Test Cases(failed) -->
 </suite> <!-- Failed suite [Chick-fil-A® Backstage Tour Automation Test] -->

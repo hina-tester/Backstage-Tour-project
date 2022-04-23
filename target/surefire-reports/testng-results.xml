@@ -1,107 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="18" passed="15">
+<testng-results skipped="0" failed="1" ignored="0" total="15" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Chick-fil-A® Backstage Tour Automation Test" duration-ms="421085" started-at="2022-04-20T07:54:13Z" finished-at="2022-04-20T08:01:14Z">
+  <suite name="Chick-fil-A® Backstage Tour Automation Test" duration-ms="999314" started-at="2022-04-23T17:30:20Z" finished-at="2022-04-23T17:47:00Z">
     <groups>
     </groups>
-    <test name="Chick-fil-A®Backstage Tour Test Cases" duration-ms="421085" started-at="2022-04-20T07:54:13Z" finished-at="2022-04-20T08:01:14Z">
-      <class name="com.Tour.qa.testdata.HeaderFooterTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="20517" started-at="2022-04-20T07:55:48Z" finished-at="2022-04-20T07:56:09Z">
+    <test name="Chick-fil-A®Backstage Tour Test Cases" duration-ms="999314" started-at="2022-04-23T17:30:20Z" finished-at="2022-04-23T17:47:00Z">
+      <class name="com.Tour.qa.testdata.EditReservationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.EditReservationTest@369f73a2]" name="setUp" is-config="true" duration-ms="91972" started-at="2022-04-23T17:32:47Z" finished-at="2022-04-23T17:34:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateeHomelink()[pri:1, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateeHomelink" duration-ms="818" started-at="2022-04-20T07:56:09Z" finished-at="2022-04-20T07:56:10Z">
+        <test-method status="PASS" signature="valiPageHeading()[pri:1, instance:com.Tour.qa.testdata.EditReservationTest@369f73a2]" name="valiPageHeading" duration-ms="36" started-at="2022-04-23T17:34:19Z" description="Validate Page heading displayed as expected" finished-at="2022-04-23T17:34:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateeHomelink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="1430" started-at="2022-04-20T07:56:10Z" finished-at="2022-04-20T07:56:11Z">
+        </test-method> <!-- valiPageHeading -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.EditReservationTest@369f73a2]" name="tearDown" is-config="true" duration-ms="793" started-at="2022-04-23T17:34:19Z" finished-at="2022-04-23T17:34:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="23864" started-at="2022-04-20T07:57:35Z" finished-at="2022-04-20T07:57:59Z">
+      </class> <!-- com.Tour.qa.testdata.EditReservationTest -->
+      <class name="com.Tour.qa.testdata.ReservationOverviewTest2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ReservationOverviewTest2@7791a895]" name="setUp" is-config="true" duration-ms="43438" started-at="2022-04-23T17:39:58Z" finished-at="2022-04-23T17:40:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateePurchacelink()[pri:2, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateePurchacelink" duration-ms="992" started-at="2022-04-20T07:57:59Z" finished-at="2022-04-20T07:58:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateePurchacelink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="1071" started-at="2022-04-20T07:58:01Z" finished-at="2022-04-20T07:58:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="17860" started-at="2022-04-20T07:58:53Z" finished-at="2022-04-20T07:59:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateePlanvisitlink()[pri:3, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateePlanvisitlink" duration-ms="2980" started-at="2022-04-20T07:59:11Z" finished-at="2022-04-20T07:59:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateePlanvisitlink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="775" started-at="2022-04-20T07:59:14Z" finished-at="2022-04-20T07:59:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="14954" started-at="2022-04-20T07:59:15Z" finished-at="2022-04-20T07:59:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateeMOdifylink()[pri:4, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateeMOdifylink" duration-ms="1064" started-at="2022-04-20T07:59:30Z" finished-at="2022-04-20T07:59:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateeMOdifylink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="1043" started-at="2022-04-20T07:59:32Z" finished-at="2022-04-20T07:59:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="18171" started-at="2022-04-20T07:59:33Z" finished-at="2022-04-20T07:59:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validateResendlink()[pri:5, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateResendlink" duration-ms="11399" started-at="2022-04-20T07:59:51Z" finished-at="2022-04-20T08:00:02Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Confirmation Sent!')]"}
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40d30f11d1dd499dc18580c30f20d24f, findElement {using=xpath, value=//h1[contains(text(),'Confirmation Sent!')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56745}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56745/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 40d30f11d1dd499dc18580c30f20d24f]]>
-            </message>
+        <test-method status="FAIL" signature="checkPurchanseTicketButton()[pri:1, instance:com.Tour.qa.testdata.ReservationOverviewTest2@7791a895]" name="checkPurchanseTicketButton" duration-ms="10092" started-at="2022-04-23T17:40:42Z" description="Validate Purchase button work fine on adding more guest on Reservation Overview page" finished-at="2022-04-23T17:40:52Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Confirmation Sent!')]"}
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40d30f11d1dd499dc18580c30f20d24f, findElement {using=xpath, value=//h1[contains(text(),'Confirmation Sent!')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56745}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56745/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 40d30f11d1dd499dc18580c30f20d24f
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at com.Tour.qa.pages.CheckHeadersAndFooters.validateResendLink(CheckHeadersAndFooters.java:114)
-at com.Tour.qa.testdata.HeaderFooterTest.validateResendlink(HeaderFooterTest.java:120)
+              <![CDATA[java.lang.NullPointerException
+at com.Tour.qa.pages.ReservationOverview2page.checkPurchanseTicketButton(ReservationOverview2page.java:46)
+at com.Tour.qa.testdata.ReservationOverviewTest2.checkPurchanseTicketButton(ReservationOverviewTest2.java:88)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,327 +53,202 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateResendlink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="1532" started-at="2022-04-20T08:00:03Z" finished-at="2022-04-20T08:00:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="18063" started-at="2022-04-20T08:00:04Z" finished-at="2022-04-20T08:00:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateFAQLink()[pri:6, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateFAQLink" duration-ms="3539" started-at="2022-04-20T08:00:23Z" finished-at="2022-04-20T08:00:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateFAQLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="845" started-at="2022-04-20T08:00:26Z" finished-at="2022-04-20T08:00:27Z">
+        </test-method> <!-- checkPurchanseTicketButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ReservationOverviewTest2@7791a895]" name="tearDown" is-config="true" duration-ms="763" started-at="2022-04-23T17:40:52Z" finished-at="2022-04-23T17:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="15431" started-at="2022-04-20T08:00:28Z" finished-at="2022-04-20T08:00:43Z">
+      </class> <!-- com.Tour.qa.testdata.ReservationOverviewTest2 -->
+      <class name="com.Tour.qa.testdata.RegistrationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.RegistrationTest@3b0143d3]" name="setUp" is-config="true" duration-ms="70138" started-at="2022-04-23T17:38:26Z" finished-at="2022-04-23T17:39:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateChickLink()[pri:7, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateChickLink" duration-ms="82" started-at="2022-04-20T08:00:43Z" finished-at="2022-04-20T08:00:43Z">
+        <test-method status="PASS" signature="CheckFillDataInRegistrationForm()[pri:1, instance:com.Tour.qa.testdata.RegistrationTest@3b0143d3]" name="CheckFillDataInRegistrationForm" duration-ms="20837" started-at="2022-04-23T17:39:37Z" description="Validate Registration form without signin work fine and User navigate on Next page successfully" finished-at="2022-04-23T17:39:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateChickLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="944" started-at="2022-04-20T08:00:43Z" finished-at="2022-04-20T08:00:44Z">
+        </test-method> <!-- CheckFillDataInRegistrationForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.RegistrationTest@3b0143d3]" name="tearDown" is-config="true" duration-ms="859" started-at="2022-04-23T17:39:57Z" finished-at="2022-04-23T17:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="13852" started-at="2022-04-20T08:00:44Z" finished-at="2022-04-20T08:00:58Z">
+      </class> <!-- com.Tour.qa.testdata.RegistrationTest -->
+      <class name="com.Tour.qa.testdata.ModifyCancelTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ModifyCancelTest@7d907bac]" name="setUp" is-config="true" duration-ms="48982" started-at="2022-04-23T17:37:37Z" finished-at="2022-04-23T17:38:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateLeagleLink()[pri:8, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validateLeagleLink" duration-ms="36" started-at="2022-04-20T08:00:58Z" finished-at="2022-04-20T08:00:58Z">
+        <test-method status="PASS" signature="validateTitle()[pri:1, instance:com.Tour.qa.testdata.ModifyCancelTest@7d907bac]" name="validateTitle" duration-ms="8" started-at="2022-04-23T17:38:26Z" description="Validate Correct page displayed" finished-at="2022-04-23T17:38:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLeagleLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="903" started-at="2022-04-20T08:00:58Z" finished-at="2022-04-20T08:00:59Z">
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ModifyCancelTest@7d907bac]" name="tearDown" is-config="true" duration-ms="749" started-at="2022-04-23T17:38:26Z" finished-at="2022-04-23T17:38:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="setUp" is-config="true" duration-ms="13973" started-at="2022-04-20T08:00:59Z" finished-at="2022-04-20T08:01:13Z">
+      </class> <!-- com.Tour.qa.testdata.ModifyCancelTest -->
+      <class name="com.Tour.qa.testdata.HeaderFooterTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@67b92f0a]" name="setUp" is-config="true" duration-ms="22939" started-at="2022-04-23T17:46:35Z" finished-at="2022-04-23T17:46:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatePriLink()[pri:9, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="validatePriLink" duration-ms="39" started-at="2022-04-20T08:01:13Z" finished-at="2022-04-20T08:01:13Z">
+        <test-method status="PASS" signature="validateeHomelink()[pri:1, instance:com.Tour.qa.testdata.HeaderFooterTest@67b92f0a]" name="validateeHomelink" duration-ms="819" started-at="2022-04-23T17:46:58Z" description="Validate Home link work fine" finished-at="2022-04-23T17:46:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatePriLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@305f7627]" name="tearDown" is-config="true" duration-ms="854" started-at="2022-04-20T08:01:13Z" finished-at="2022-04-20T08:01:14Z">
+        </test-method> <!-- validateeHomelink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HeaderFooterTest@67b92f0a]" name="tearDown" is-config="true" duration-ms="780" started-at="2022-04-23T17:46:59Z" finished-at="2022-04-23T17:46:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Tour.qa.testdata.HeaderFooterTest -->
-      <class name="com.Tour.qa.testdata.FaqPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.FaqPageTest@56ace400]" name="setUp" is-config="true" duration-ms="33535" started-at="2022-04-20T07:54:52Z" finished-at="2022-04-20T07:55:26Z">
+      <class name="com.Tour.qa.testdata.PaymentPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.PaymentPageTest@4b4523f8]" name="setUp" is-config="true" duration-ms="73227" started-at="2022-04-23T17:42:56Z" finished-at="2022-04-23T17:44:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatePageHeading()[pri:1, instance:com.Tour.qa.testdata.FaqPageTest@56ace400]" name="validatePageHeading" duration-ms="224" started-at="2022-04-20T07:55:26Z" finished-at="2022-04-20T07:55:26Z">
+        <test-method status="PASS" signature="validateTitle()[pri:1, instance:com.Tour.qa.testdata.PaymentPageTest@4b4523f8]" name="validateTitle" duration-ms="41" started-at="2022-04-23T17:44:09Z" description="Validate page Title should display as expected" finished-at="2022-04-23T17:44:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatePageHeading -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.FaqPageTest@56ace400]" name="tearDown" is-config="true" duration-ms="896" started-at="2022-04-20T07:55:26Z" finished-at="2022-04-20T07:55:27Z">
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.PaymentPageTest@4b4523f8]" name="tearDown" is-config="true" duration-ms="815" started-at="2022-04-23T17:44:09Z" finished-at="2022-04-23T17:44:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.FaqPageTest@56ace400]" name="setUp" is-config="true" duration-ms="18588" started-at="2022-04-20T07:56:44Z" finished-at="2022-04-20T07:57:02Z">
+      </class> <!-- com.Tour.qa.testdata.PaymentPageTest -->
+      <class name="com.Tour.qa.testdata.ChooseTourTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ChooseTourTest@6ddf90b0]" name="setUp" is-config="true" duration-ms="55829" started-at="2022-04-23T17:34:19Z" finished-at="2022-04-23T17:35:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateQuestions()[pri:2, instance:com.Tour.qa.testdata.FaqPageTest@56ace400]" name="validateQuestions" duration-ms="94" started-at="2022-04-20T07:57:02Z" finished-at="2022-04-20T07:57:02Z">
+        <test-method status="PASS" signature="ChooseTourPageTitleTest()[pri:1, instance:com.Tour.qa.testdata.ChooseTourTest@6ddf90b0]" name="ChooseTourPageTitleTest" duration-ms="29" started-at="2022-04-23T17:35:15Z" description="Verify Page title is displaying correct" finished-at="2022-04-23T17:35:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateQuestions -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.FaqPageTest@56ace400]" name="tearDown" is-config="true" duration-ms="782" started-at="2022-04-20T07:57:03Z" finished-at="2022-04-20T07:57:03Z">
+        </test-method> <!-- ChooseTourPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ChooseTourTest@6ddf90b0]" name="tearDown" is-config="true" duration-ms="761" started-at="2022-04-23T17:35:15Z" finished-at="2022-04-23T17:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tour.qa.testdata.ChooseTourTest -->
+      <class name="com.Tour.qa.testdata.ReservationOverviewTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ReservationOverviewTest@1f28c152]" name="setUp" is-config="true" duration-ms="76147" started-at="2022-04-23T17:35:16Z" finished-at="2022-04-23T17:36:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateeModifyButt()[pri:1, instance:com.Tour.qa.testdata.ReservationOverviewTest@1f28c152]" name="validateeModifyButt" duration-ms="3675" started-at="2022-04-23T17:36:32Z" description="Validate Modify Reservation button work as expected" finished-at="2022-04-23T17:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateeModifyButt -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ReservationOverviewTest@1f28c152]" name="tearDown" is-config="true" duration-ms="749" started-at="2022-04-23T17:36:36Z" finished-at="2022-04-23T17:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tour.qa.testdata.ReservationOverviewTest -->
+      <class name="com.Tour.qa.testdata.ChooseDateTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ChooseDateTest@57536d79]" name="setUp" is-config="true" duration-ms="59204" started-at="2022-04-23T17:36:37Z" finished-at="2022-04-23T17:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="CheckPageTitle()[pri:1, instance:com.Tour.qa.testdata.ChooseDateTest@57536d79]" name="CheckPageTitle" duration-ms="13" started-at="2022-04-23T17:37:36Z" description="Verify Page title is displaying correct" finished-at="2022-04-23T17:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ChooseDateTest@57536d79]" name="tearDown" is-config="true" duration-ms="787" started-at="2022-04-23T17:37:36Z" finished-at="2022-04-23T17:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tour.qa.testdata.ChooseDateTest -->
+      <class name="com.Tour.qa.testdata.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.LoginTest@2b2948e2]" name="setUp" is-config="true" duration-ms="65572" started-at="2022-04-23T17:31:40Z" finished-at="2022-04-23T17:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.Tour.qa.testdata.LoginTest@2b2948e2]" name="loginPageTitleTest" duration-ms="9" started-at="2022-04-23T17:32:46Z" description="Validate Login page title display as expected" finished-at="2022-04-23T17:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.LoginTest@2b2948e2]" name="tearDown" is-config="true" duration-ms="831" started-at="2022-04-23T17:32:46Z" finished-at="2022-04-23T17:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tour.qa.testdata.LoginTest -->
+      <class name="com.Tour.qa.testdata.PlanYourVisitText">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.PlanYourVisitText@3a5ed7a6]" name="setUp" is-config="true" duration-ms="53583" started-at="2022-04-23T17:42:01Z" finished-at="2022-04-23T17:42:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateTitle()[pri:1, instance:com.Tour.qa.testdata.PlanYourVisitText@3a5ed7a6]" name="validateTitle" duration-ms="64" started-at="2022-04-23T17:42:55Z" description="Validate Page title should display as expected" finished-at="2022-04-23T17:42:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.PlanYourVisitText@3a5ed7a6]" name="tearDown" is-config="true" duration-ms="703" started-at="2022-04-23T17:42:55Z" finished-at="2022-04-23T17:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tour.qa.testdata.PlanYourVisitText -->
+      <class name="com.Tour.qa.testdata.ConfirmationPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ConfirmationPageTest@5a8e6209]" name="setUp" is-config="true" duration-ms="67388" started-at="2022-04-23T17:40:53Z" finished-at="2022-04-23T17:42:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidateTourType()[pri:1, instance:com.Tour.qa.testdata.ConfirmationPageTest@5a8e6209]" name="ValidateTourType" duration-ms="58" started-at="2022-04-23T17:42:00Z" description="Validate tour type displayed as expected" finished-at="2022-04-23T17:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTourType -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ConfirmationPageTest@5a8e6209]" name="tearDown" is-config="true" duration-ms="803" started-at="2022-04-23T17:42:01Z" finished-at="2022-04-23T17:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Tour.qa.testdata.ConfirmationPageTest -->
+      <class name="com.Tour.qa.testdata.FaqPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.FaqPageTest@6325a3ee]" name="setUp" is-config="true" duration-ms="105136" started-at="2022-04-23T17:44:10Z" finished-at="2022-04-23T17:45:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePageHeading()[pri:1, instance:com.Tour.qa.testdata.FaqPageTest@6325a3ee]" name="validatePageHeading" duration-ms="42" started-at="2022-04-23T17:45:55Z" description="Validate Page heading display correct" finished-at="2022-04-23T17:45:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePageHeading -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.FaqPageTest@6325a3ee]" name="tearDown" is-config="true" duration-ms="718" started-at="2022-04-23T17:45:55Z" finished-at="2022-04-23T17:45:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Tour.qa.testdata.FaqPageTest -->
       <class name="com.Tour.qa.testdata.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="setUp" is-config="true" duration-ms="34746" started-at="2022-04-20T07:54:14Z" finished-at="2022-04-20T07:54:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@eec5a4a]" name="setUp" is-config="true" duration-ms="77042" started-at="2022-04-23T17:30:21Z" finished-at="2022-04-23T17:31:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomePageTitleTest()[pri:1, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="HomePageTitleTest" duration-ms="247" started-at="2022-04-20T07:54:50Z" finished-at="2022-04-20T07:54:50Z">
+        <test-method status="PASS" signature="HomePageTitleTest()[pri:1, instance:com.Tour.qa.testdata.HomePageTest@eec5a4a]" name="HomePageTitleTest" duration-ms="29" started-at="2022-04-23T17:31:38Z" description="Validate Home page title display as expected" finished-at="2022-04-23T17:31:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="tearDown" is-config="true" duration-ms="1504" started-at="2022-04-20T07:54:51Z" finished-at="2022-04-20T07:54:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="setUp" is-config="true" duration-ms="13595" started-at="2022-04-20T07:56:11Z" finished-at="2022-04-20T07:56:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckModifyCancel()[pri:2, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="CheckModifyCancel" duration-ms="1470" started-at="2022-04-20T07:56:25Z" finished-at="2022-04-20T07:56:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckModifyCancel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="tearDown" is-config="true" duration-ms="1126" started-at="2022-04-20T07:56:26Z" finished-at="2022-04-20T07:56:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="setUp" is-config="true" duration-ms="15060" started-at="2022-04-20T07:56:28Z" finished-at="2022-04-20T07:56:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckBanner()[pri:2, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="CheckBanner" duration-ms="52" started-at="2022-04-20T07:56:43Z" finished-at="2022-04-20T07:56:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckBanner -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="tearDown" is-config="true" duration-ms="853" started-at="2022-04-20T07:56:43Z" finished-at="2022-04-20T07:56:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="setUp" is-config="true" duration-ms="13575" started-at="2022-04-20T07:58:02Z" finished-at="2022-04-20T07:58:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CheckOurchaseTicket()[pri:3, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="CheckOurchaseTicket" duration-ms="2720" started-at="2022-04-20T07:58:16Z" finished-at="2022-04-20T07:58:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckOurchaseTicket -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@4de41af9]" name="tearDown" is-config="true" duration-ms="838" started-at="2022-04-20T07:58:19Z" finished-at="2022-04-20T07:58:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.HomePageTest@eec5a4a]" name="tearDown" is-config="true" duration-ms="2174" started-at="2022-04-23T17:31:38Z" finished-at="2022-04-23T17:31:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Tour.qa.testdata.HomePageTest -->
       <class name="com.Tour.qa.testdata.ForgotPasswordTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="setUp" is-config="true" duration-ms="19475" started-at="2022-04-20T07:55:27Z" finished-at="2022-04-20T07:55:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@1d16f93d]" name="setUp" is-config="true" duration-ms="38404" started-at="2022-04-23T17:45:56Z" finished-at="2022-04-23T17:46:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="loginPageTitleTest" duration-ms="54" started-at="2022-04-20T07:55:47Z" finished-at="2022-04-20T07:55:47Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.Tour.qa.testdata.ForgotPasswordTest@1d16f93d]" name="loginPageTitleTest" duration-ms="60" started-at="2022-04-23T17:46:34Z" description="Validate Page title display correct" finished-at="2022-04-23T17:46:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="tearDown" is-config="true" duration-ms="855" started-at="2022-04-20T07:55:47Z" finished-at="2022-04-20T07:55:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="setUp" is-config="true" duration-ms="15078" started-at="2022-04-20T07:57:03Z" finished-at="2022-04-20T07:57:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="ValidateResetPWWithValidEmail()[pri:2, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="ValidateResetPWWithValidEmail" duration-ms="14284" started-at="2022-04-20T07:57:19Z" finished-at="2022-04-20T07:57:33Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Need To Reset Your Password?')]"}
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b99cfb254cef267763250583873f084, findElement {using=xpath, value=//h1[contains(text(),'Need To Reset Your Password?')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56474/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b99cfb254cef267763250583873f084]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Need To Reset Your Password?')]"}
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3b99cfb254cef267763250583873f084, findElement {using=xpath, value=//h1[contains(text(),'Need To Reset Your Password?')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56474/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3b99cfb254cef267763250583873f084
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at com.Tour.qa.pages.ForgotPassword.ValidateResetPWWithValidEmail(ForgotPassword.java:71)
-at com.Tour.qa.testdata.ForgotPasswordTest.ValidateResetPWWithValidEmail(ForgotPasswordTest.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateResetPWWithValidEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="tearDown" is-config="true" duration-ms="1325" started-at="2022-04-20T07:57:34Z" finished-at="2022-04-20T07:57:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="setUp" is-config="true" duration-ms="18683" started-at="2022-04-20T07:58:21Z" finished-at="2022-04-20T07:58:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="ValidateResetPWWithInValidEmail()[pri:3, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="ValidateResetPWWithInValidEmail" duration-ms="11615" started-at="2022-04-20T07:58:40Z" finished-at="2022-04-20T07:58:52Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Please enter a valid email.')]"}
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d7e01e9877c9963f2d8a13714d009627, findElement {using=xpath, value=//span[contains(text(),'Please enter a valid email.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56609/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d7e01e9877c9963f2d8a13714d009627]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Please enter a valid email.')]"}
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-PSP68KB', ip: '192.168.223.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d7e01e9877c9963f2d8a13714d009627, findElement {using=xpath, value=//span[contains(text(),'Please enter a valid email.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56609/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d7e01e9877c9963f2d8a13714d009627
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at com.Tour.qa.pages.ForgotPassword.ValidateResetPWWithInValidEmail(ForgotPassword.java:81)
-at com.Tour.qa.testdata.ForgotPasswordTest.ValidateResetPWWithInValidEmail(ForgotPasswordTest.java:67)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateResetPWWithInValidEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@47404bea]" name="tearDown" is-config="true" duration-ms="1297" started-at="2022-04-20T07:58:52Z" finished-at="2022-04-20T07:58:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Tour.qa.testdata.ForgotPasswordTest@1d16f93d]" name="tearDown" is-config="true" duration-ms="735" started-at="2022-04-23T17:46:34Z" finished-at="2022-04-23T17:46:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
