@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Gmail Suite" >
+         
+  <test name="flipkart">
+	 <classes>
+	  <class name="com.Tour.qa.testdata.HomePageTest"></class>    
+	 </classes>
+   </test>
+   
+  <test name="Myntra">
+     <classes>
+       <class name="com.Tour.qa.testdata.LoginTest"></class> 
+     </classes>
+   </test>
+
+
+ <test name="flipkart1">
+	 <classes>
+	  <class name="com.Tour.qa.testdata.ChooseTourTest"></class>
+	 </classes>
+   </test>
+   
+  <test name="Myntra1">
+     <classes>
+       <class name="com.Tour.qa.testdata.ChooseDateTest"></class>
+     </classes>
+   </test>
+   
+    <test name="flipkart2">
+	 <classes>
+	  <class name="com.Tour.qa.testdata.RegistrationTest"></class>
+	 </classes>
+   </test>
+   
+  <test name="Myntra2">
+     <classes>
+       <class name="com.Tour.qa.testdata.ConfirmationPageTest"></class>
+     </classes>
+   </test>
+   
+   <test name="Myntra3">
+     <classes>
+      <class name="com.Tour.qa.testdata.PaymentPageTest"></class>
+     </classes>
+   </test>
+   
+    <test name="flipkart4">
+	 <classes>
+	  <class name="com.Tour.qa.testdata.PrintTicketTest"></class>
+	 </classes>
+   </test>
+   
+  <test name="Myntra5">
+     <classes>
+      <class name="com.Tour.qa.testdata.EditReservationTest"></class>  
+     </classes>
+   </test>
+   
+   
+    <test name="Myntra6">
+     <classes>
+     <class name="com.Tour.qa.testdata.ReservationOverviewTest"></class> 
+     </classes>
+   </test>
+   
+    <test name="flipkart7">
+	 <classes>
+	  <class name="com.Tour.qa.testdata.ModifyCancelTest"></class>   
+	 </classes>
+   </test>
+   
+  <test name="Myntra8">
+     <classes>
+     <class name="com.Tour.qa.testdata.ReservationOverviewTest2"></class>
+     </classes>
+   </test>
+    <test name="Myntra9">
+     <classes>
+    <class name="com.Tour.qa.testdata.PlanYourVisitText"></class>
+     </classes>
+   </test>
+   
+    <test name="flipkart10">
+	 <classes>
+	 <class name="com.Tour.qa.testdata.FaqPageTest"></class>
+	 </classes>
+   </test>
+   
+  <test name="Myntra11">
+     <classes>
+     <class name="com.Tour.qa.testdata.ForgotPasswordTest"></class>
+     </classes>
+   </test>
+     
+
+   
+</suite>

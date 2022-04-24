@@ -56,6 +56,7 @@ public class Reporting extends TestListenerAdapter
 	{
 		logger=extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.PASS,MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted
+		logger.log(Status.PASS, "TEST CASE FAILED IS :"+tr.getMethod().getDescription()); 
 	}
 	
 	public void onTestFailure(ITestResult tr)
@@ -95,6 +96,8 @@ public class Reporting extends TestListenerAdapter
 	{
 		logger=extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
+		logger.log(Status.SKIP, "TEST CASE FAILED IS :"+tr.getMethod().getDescription()); 
+		logger.log(Status.SKIP, "TEST CASE FAILED IS :"+tr.getThrowable()); 
 		
 	}
 	

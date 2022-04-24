@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  flipkart1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>flipkart1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 24 05:03:10 PKT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>250 seconds (250791 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.ChooseTourPageTitleTest()'><b>ChooseTourPageTitleTest</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Verify Page title is displaying correct</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.InputGroupSizeOfTHEDELUXE()'><b>InputGroupSizeOfTHEDELUXE</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate  User should navigate successfully on choose date page by clicking button for Group size The Deluxe</td>
+<td></td>
+<td>2</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.InputGroupSizeOfTHEORIGINAL()'><b>InputGroupSizeOfTHEORIGINAL</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate  User should navigate successfully on choose date page by clicking button in Group type The original</td>
+<td></td>
+<td>3</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.PageHeading()'><b>PageHeading</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate Page Heading is displayin on page</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.Slider()'><b>Slider</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate Slider is displaying on page</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.TestInvalidInout1()'><b>TestInvalidInout1</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate error should display for providing invalid input in Group Type 1</td>
+<td></td>
+<td>5</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.TestInvalidInout2()'><b>TestInvalidInout2</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate error should display for providing invalid input in Group Type 2</td>
+<td></td>
+<td>5</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.TestSliderNextBut()'><b>TestSliderNextBut</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate slider button works fine for next slide</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.TestSliderPreBut()'><b>TestSliderPreBut</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Validate slider button works fine</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.validateBanne()'><b>validateBanne</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Verify Page Banner is displaying correct</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.ChooseTourTest.validateText1()'><b>validateText1</b><br>Test class: com.Tour.qa.testdata.ChooseTourTest<br>Test method: Verify text is displaying correct</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.ChooseTourTest@23e028a9</td></tr>
+</table><p>
+</body>
+</html>

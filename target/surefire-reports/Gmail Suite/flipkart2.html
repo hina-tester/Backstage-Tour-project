@@ -1,0 +1,377 @@
+<html>
+<head>
+<title>TestNG:  flipkart2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>flipkart2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 24 05:11:28 PKT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1377 seconds (1377889 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.ErrorShouldDisplyOnPrpviding10CharInMobileFildOdRegidtrationPage()'><b>ErrorShouldDisplyOnPrpviding10CharInMobileFildOdRegidtrationPage</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should displayed on providing invalid mobile number as per rules</td>
+<td><div><pre>java.lang.AssertionError: expected [The value &apos;qwertyuiop&apos; is invalid.] but found []
+	at com.Tour.qa.testdata.RegistrationTest.ErrorShouldDisplyOnPrpviding10CharInMobileFildOdRegidtrationPage(RegistrationTest.java:181)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace115016870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace115016870'><pre>java.lang.AssertionError: expected [The value &apos;qwertyuiop&apos; is invalid.] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.Tour.qa.testdata.RegistrationTest.ErrorShouldDisplyOnPrpviding10CharInMobileFildOdRegidtrationPage(RegistrationTest.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.checkFirstName()'><b>checkFirstName</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate error message should dispayed on providing invalid input in first name field</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Tour.qa.testdata.RegistrationTest.checkFirstName(RegistrationTest.java:255)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1129991469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1129991469'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.Tour.qa.testdata.RegistrationTest.checkFirstName(RegistrationTest.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.checkLastName()'><b>checkLastName</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate error message should dispayed on providing invalid input in last name field</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.Tour.qa.testdata.RegistrationTest.checkLastName(RegistrationTest.java:270)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1604359229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604359229'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.Tour.qa.testdata.RegistrationTest.checkLastName(RegistrationTest.java:270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>9</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.BothPasswordFieldNotMatch()'><b>BothPasswordFieldNotMatch</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate error display on providing different password and confirm password field</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.CheckBanner()'><b>CheckBanner</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate banner is displaying on page</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.CheckFillDataInRegistrationForm()'><b>CheckFillDataInRegistrationForm</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate Registration form without signin work fine and User navigate on Next page successfully</td>
+<td></td>
+<td>11</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.CheckInvalidEmail()'><b>CheckInvalidEmail</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should displayed on providing inavlid email like only abc or abc@</td>
+<td></td>
+<td>7</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.CheckduplicateEmail()'><b>CheckduplicateEmail</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate that proper error message should displayed on providing duplicate email</td>
+<td></td>
+<td>5</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.CheckinvalidData()'><b>CheckinvalidData</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate Proper error message should display for providing invalid data in each form's fields</td>
+<td></td>
+<td>10</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.HeadingValidate1()'><b>HeadingValidate1</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate Heading of page displaying </td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.HomePageTitleTest()'><b>HomePageTitleTest</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate page heading is displaying on page</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.TestLessDigitinMob()'><b>TestLessDigitinMob</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should dispalyed on providing less digits in mobile field/ invalid data</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.TestPasseordWithOnlyInt()'><b>TestPasseordWithOnlyInt</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should display on providing only int in password field</td>
+<td></td>
+<td>9</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.ValidateHeading2()'><b>ValidateHeading2</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate form heading is display fine</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.ValidateHeading3()'><b>ValidateHeading3</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate form heading of section display fine</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.ValidateHeading4()'><b>ValidateHeading4</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate form section heading should displaying fine</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.ValidateHeading5()'><b>ValidateHeading5</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate form section heading should displaying fine</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.VehiclesFieldWithCharacter()'><b>VehiclesFieldWithCharacter</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should displayed on providing invalid data in vehicales field</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.checkEmailnotMatch()'><b>checkEmailnotMatch</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should displayed on providing different email and confirm email field</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.checkGroupSizeWithString()'><b>checkGroupSizeWithString</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate error message should displayed on providing invalid data in group size field</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.checkMandatoryFieldsOnLeavinfEmpty()'><b>checkMandatoryFieldsOnLeavinfEmpty</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate error should displayed on leaving mandatory fields on form</td>
+<td></td>
+<td>7</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.emptyFormtTest()'><b>emptyFormtTest</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate that proper error message should displayed for each mandatory field on clicking button without providing any data on form</td>
+<td></td>
+<td>6</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.invalidMobNumber()'><b>invalidMobNumber</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should displayed on providing invalid mobile number as per rules</td>
+<td></td>
+<td>7</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.invalidMobWithLeassDigit()'><b>invalidMobWithLeassDigit</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate proper error message should displayed on providing invalid mobile number as per rules</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.invalidPasswordTest()'><b>invalidPasswordTest</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate that proper error message should displayed on providing invalid password like char are less then 8 char, or provide on int or only char</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.invalidZipCodeTest()'><b>invalidZipCodeTest</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate that proper error message should dispalyed on providing invalid zipCode like less than 5 char</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.testPasswordWithOnlyString()'><b>testPasswordWithOnlyString</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate that proper error message should displayed on providing only string in password field</td>
+<td></td>
+<td>8</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateChoosDateFromMenuBar()'><b>validateChoosDateFromMenuBar</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate date should displayed as per given data</td>
+<td></td>
+<td>4</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateChoosFromMenuBar()'><b>validateChoosFromMenuBar</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate on clicking choose date from sub bar menu is working fine and choose date page should navigate by clicking this link</td>
+<td></td>
+<td>4</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateForgot()'><b>validateForgot</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate forgot password link is working fine</td>
+<td></td>
+<td>2</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateGroupSize()'><b>validateGroupSize</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate Group size displaying correct as per given data</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateGroupText1()'><b>validateGroupText1</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate Group type displayed correct as per given data </td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateLoginButton()'><b>validateLoginButton</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate login button is working fine,it should navigate onlogin page</td>
+<td></td>
+<td>2</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+<tr>
+<td title='com.Tour.qa.testdata.RegistrationTest.validateService()'><b>validateService</b><br>Test class: com.Tour.qa.testdata.RegistrationTest<br>Test method: Validate link for gues service should work fine</td>
+<td></td>
+<td>0</td>
+<td>com.Tour.qa.testdata.RegistrationTest@1dfe2924</td></tr>
+</table><p>
+</body>
+</html>

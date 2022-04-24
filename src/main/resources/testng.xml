@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Chick-fil-A® Backstage Tour Automation Test" >
+<suite name="Chick-fil-A® Backstage Tour Automation Test1">
 
 	<listeners>
 	
@@ -12,12 +12,12 @@
 
 	</listeners>
 
-	<test name="Chick-fil-A®Backstage Tour Test Cases">
+	<test name="Chick-fil-A®Backstage Tour Test Cases 1"  >
 	
 		<classes>
-			
+
 	 		<class name="com.Tour.qa.testdata.HomePageTest"></class>    
- 		<class name="com.Tour.qa.testdata.LoginTest"></class> 
+ 		    <class name="com.Tour.qa.testdata.LoginTest"></class> 
  	 		<class name="com.Tour.qa.testdata.ChooseTourTest"></class>
 			<class name="com.Tour.qa.testdata.ChooseDateTest"></class>
 			<class name="com.Tour.qa.testdata.RegistrationTest"></class>
@@ -32,7 +32,7 @@
 			<class name="com.Tour.qa.testdata.FaqPageTest"></class>
 			<class name="com.Tour.qa.testdata.ForgotPasswordTest"></class>
 			<class name="com.Tour.qa.testdata.HeaderFooterTest"></class>	 				  
-			    
+			  
 		
 		</classes>
 	</test>
