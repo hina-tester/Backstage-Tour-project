@@ -38,7 +38,7 @@ public class ChooseTourTest extends TestBase{
 	
 	
 
-	@Test(priority=1,description = "Verify Page title is displaying correct")
+	@Test(priority=1,description = "Choose Tour Page: Verify Page title is displaying correct")
 	public void ChooseTourPageTitleTest(){
 		
 		
@@ -47,13 +47,13 @@ public class ChooseTourTest extends TestBase{
 		
 	}
 
-	@Test(priority=2,description = "Verify Page Banner is displaying correct")
+	@Test(priority=2,description = "Choose Tour Page: Verify Page Banner is displaying correct")
 	public void validateBanne(){
 		boolean flag = chooseTour.validateBanner();
 		Assert.assertTrue(flag);
 	}
 	
-	@Test(priority=3,description = "Verify text is displaying correct")
+	@Test(priority=3,description = "Choose Tour Page: Verify text is displaying correct")
 	public void validateText1(){
 		boolean flag = chooseTour.validateText1();
 		Assert.assertTrue(flag);
@@ -61,7 +61,7 @@ public class ChooseTourTest extends TestBase{
 	
 
 
-	@Test(priority=4,description = "Validate  User should navigate successfully on choose date page by clicking button in Group type The original")
+	@Test(priority=4,description = "Choose Tour Page: Validate  User should navigate successfully on choose date page by clicking button in Group type The original")
 	public void InputGroupSizeOfTHEORIGINAL() {
 		
 		
@@ -77,7 +77,7 @@ public class ChooseTourTest extends TestBase{
 	}
 	
 	
-	@Test(priority=5,description = "Validate  User should navigate successfully on choose date page by clicking button for Group size The Deluxe")
+	@Test(priority=5,description = "Choose Tour Page: Validate  User should navigate successfully on choose date page by clicking button for Group size The Deluxe")
 	public void InputGroupSizeOfTHEDELUXE() {
 		
 		
@@ -91,7 +91,7 @@ public class ChooseTourTest extends TestBase{
 	}
 	
 	
-	@Test(priority=6,description = "Validate error should display for providing invalid input in Group Type 1")
+	@Test(priority=6,description = "Choose Tour Page: Validate error should display for providing invalid input in Group Type 1")
 	public void TestInvalidInout1() throws InterruptedException{
 		
 		
@@ -102,7 +102,7 @@ public class ChooseTourTest extends TestBase{
 		
 	}
 	
-	@Test(priority=7,description = "Validate error should display for providing invalid input in Group Type 2")
+	@Test(priority=7,description = "Choose Tour Page: Validate error should display for providing invalid input in Group Type 2")
 	public void TestInvalidInout2() throws InterruptedException{
 		
 		
@@ -113,7 +113,7 @@ public class ChooseTourTest extends TestBase{
 		
 	}
 	
-	@Test(priority=8,description = "Validate Slider is displaying on page")
+	@Test(priority=8,description = "Choose Tour Page: Validate Slider is displaying on page")
 	public void Slider(){
 		
 		
@@ -133,7 +133,7 @@ public class ChooseTourTest extends TestBase{
 	}
 	
 	
-	@Test(priority=10,description = "Validate slider button works fine")
+	@Test(priority=10,description = "Choose Tour Page: Validate slider button works fine")
 	public void TestSliderPreBut(){
 		
 		

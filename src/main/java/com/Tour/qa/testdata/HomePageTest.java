@@ -34,7 +34,7 @@ public class HomePageTest  extends TestBase {
 		
 	}
 	
-	@Test(priority=1,description = "Validate Home page title display as expected")
+	@Test(priority=1,description = "Home page : Validate Home page title display as expected")
 	public void HomePageTitleTest(){
 		
 		String title = homePage.validateHomePageTitle();
@@ -43,14 +43,14 @@ public class HomePageTest  extends TestBase {
 	}
 
 	
-	@Test(priority=2,description = "Validate Banner displayed as expected")
+	@Test(priority=2,description = "Home page : Validate Banner displayed as expected")
 	public void CheckBanner(){
 		boolean flag = homePage.validateBanner();
 		Assert.assertTrue(flag);
 	}
 	
 	
-	@Test(priority=3,description = "Validate  Modify cancle option work as expected")
+	@Test(priority=3,description = "Home page : Validate  Modify cancle option work as expected")
 	public void CheckModifyCancel(){
 		String title = homePage.CheckModifyCancel();
 		Assert.assertEquals(title, "Logon");
@@ -58,7 +58,7 @@ public class HomePageTest  extends TestBase {
 	
 		
 	
-	@Test(priority=4,description = "Validate purchase ticket option work fine")
+	@Test(priority=4,description = "Home page : Validate purchase ticket option work fine")
 	public void CheckOurchaseTicket(){
 
 		chooseTour = homePage.CheckPurchaseTicket();

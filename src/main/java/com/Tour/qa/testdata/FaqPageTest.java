@@ -82,7 +82,7 @@ public class FaqPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=1,description = "Validate Page heading display correct")
+	@Test(priority=1,description = "FAQ Page : Validate Page heading display correct")
 	public void validatePageHeading(){
 		
 		boolean  flag =  faq.validatePgaeHeading();
@@ -91,7 +91,7 @@ public class FaqPageTest  extends TestBase{
 		
 	}
 	
-	@Test(priority=2,description = "Validate Questions display as expected")
+	@Test(priority=2,description = "FAQ Page : Validate Questions display as expected")
 	public void validateQuestions(){
 		
 		boolean  flag =  faq.validatequestions();

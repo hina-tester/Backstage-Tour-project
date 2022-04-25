@@ -71,7 +71,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 
-		@Test(priority=1,description = "Validate Registration form without signin work fine and User navigate on Next page successfully")
+		@Test(priority=1,description = "Registration Page : Validate Registration form without signin work fine and User navigate on Next page successfully")
 		public void CheckFillDataInRegistrationForm(){
 			
 			String Actualheading = RegisPage.CheckFillData();
@@ -89,7 +89,7 @@ public class RegistrationTest  extends TestBase{
 		
 	
 	
-		@Test(priority=2,description = "Validate proper error message should displayed on providing inavlid email like only abc or abc@")
+		@Test(priority=2,description = "Registration Page : Validate proper error message should displayed on providing inavlid email like only abc or abc@")
 		public void CheckInvalidEmail() throws InterruptedException {
 			
 			boolean flag= RegisPage.CheckInvalidEmail("abc");
@@ -102,7 +102,7 @@ public class RegistrationTest  extends TestBase{
 		}
 	
 		
-		@Test(priority=3,description = "Validate that proper error message should displayed on providing duplicate email")
+		@Test(priority=3,description = "Registration Page : Validate that proper error message should displayed on providing duplicate email")
 		public void CheckduplicateEmail() throws InterruptedException {
 			
 		
@@ -112,7 +112,7 @@ public class RegistrationTest  extends TestBase{
 			
 		}
 		
-				@Test(priority=4,description = "Validate Proper error message should display for providing invalid data in each form's fields")
+				@Test(priority=4,description = "Registration Page : Validate Proper error message should display for providing invalid data in each form's fields")
 		public void CheckinvalidData() throws InterruptedException{
 			
 			boolean flag = RegisPage.fillInvalidForm();
@@ -123,7 +123,7 @@ public class RegistrationTest  extends TestBase{
 		}
 	
 		
-		@Test(priority=5,description = "Validate that proper error message should displayed for each mandatory field on clicking button without providing any data on form")
+		@Test(priority=5,description = "Registration Page : Validate that proper error message should displayed for each mandatory field on clicking button without providing any data on form")
 		public void emptyFormtTest() throws InterruptedException{
 			boolean flag = RegisPage.emptyForm();
 			Assert.assertTrue(flag);
@@ -133,7 +133,7 @@ public class RegistrationTest  extends TestBase{
 
 
 		
-		@Test(priority=6,description = "Validate that proper error message should displayed on providing invalid password like char are less then 8 char, or provide on int or only char")
+		@Test(priority=6,description = "Registration Page : Validate that proper error message should displayed on providing invalid password like char are less then 8 char, or provide on int or only char")
 		public void invalidPasswordTest() throws InterruptedException{
 			boolean flag = RegisPage.invalidPassword("test11");
 			Assert.assertTrue(flag);
@@ -142,7 +142,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 	
-		@Test(priority=7,description = "Validate that proper error message should dispalyed on providing invalid zipCode like less than 5 char")
+		@Test(priority=7,description = "Registration Page : Validate that proper error message should dispalyed on providing invalid zipCode like less than 5 char")
 		public void invalidZipCodeTest() throws InterruptedException{
 			boolean flag = RegisPage.invalidZipCode("tes");
 			Assert.assertTrue(flag);
@@ -151,7 +151,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 		
-		@Test(priority=8,description = "Validate proper error message should displayed on providing invalid mobile number as per rules")
+		@Test(priority=8,description = "Registration Page : Validate proper error message should displayed on providing invalid mobile number as per rules")
 		public void invalidMobNumber() throws InterruptedException{  // provide less then 10 int
 			
 			String text = "1234";
@@ -161,7 +161,7 @@ public class RegistrationTest  extends TestBase{
 			
 		}
 		
-		@Test(priority=8,description = "Validate proper error message should displayed on providing invalid mobile number as per rules")
+		@Test(priority=8,description = "Registration Page : Validate proper error message should displayed on providing invalid mobile number as per rules")
 		public void invalidMobWithLeassDigit() throws InterruptedException{  // provide less then 10 int
 			
 			int text = 1234;
@@ -172,7 +172,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 		
-		@Test(priority=8,description = "Validate proper error message should displayed on providing invalid mobile number as per rules")
+		@Test(priority=8,description = "Registration Page : Validate proper error message should displayed on providing invalid mobile number as per rules")
 		public void ErrorShouldDisplyOnPrpviding10CharInMobileFildOdRegidtrationPage() throws InterruptedException{  //enter character
 			
 			String text = "qwertyuiop";
@@ -184,7 +184,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 		
-		@Test(priority=9,description = "Validate proper error message should dispalyed on providing less digits in mobile field/ invalid data")
+		@Test(priority=9,description = "Registration Page : Validate proper error message should dispalyed on providing less digits in mobile field/ invalid data")
 		public void TestLessDigitinMob() throws InterruptedException{
 			
 			int num =7876;
@@ -207,7 +207,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 		
-		@Test(priority=10,description = "Validate proper error message should display on providing only int in password field")
+		@Test(priority=10,description = "Registration Page : Validate proper error message should display on providing only int in password field")
 		public void TestPasseordWithOnlyInt() throws InterruptedException{
 			
 			int num =12345678;
@@ -219,7 +219,7 @@ public class RegistrationTest  extends TestBase{
 		
 		
 		
-		@Test(priority=11,description = "Validate that proper error message should displayed on providing only string in password field")
+		@Test(priority=11,description = "Registration Page : Validate that proper error message should displayed on providing only string in password field")
 		public void testPasswordWithOnlyString() throws InterruptedException{
 			
 			
@@ -230,7 +230,7 @@ public class RegistrationTest  extends TestBase{
 		}
 	
 		
-		@Test(priority=12,description = "Validate error message should dispayed on providing invalid input in first name field")
+		@Test(priority=12,description = "Registration Page : Validate error message should dispayed on providing invalid input in first name field")
 		public void checkFirstName() throws InterruptedException{
 			
 			int name=111;
@@ -260,7 +260,7 @@ public class RegistrationTest  extends TestBase{
 		}
 			
 		
-		@Test(priority=13,description = "Validate error message should dispayed on providing invalid input in last name field")
+		@Test(priority=13,description = "Registration Page : Validate error message should dispayed on providing invalid input in last name field")
 		public void checkLastName() throws InterruptedException{
 			
 			int name=111;
@@ -283,7 +283,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 		
-		@Test(priority=14,description = "Validate proper error message should displayed on providing different email and confirm email field")
+		@Test(priority=14,description = "Registration Page : Validate proper error message should displayed on providing different email and confirm email field")
 		public void checkEmailnotMatch() throws InterruptedException{
 			
 			
@@ -309,7 +309,7 @@ public class RegistrationTest  extends TestBase{
 		}
 		
 		
-		@Test(priority=16,description = "Validate error should displayed on leaving mandatory fields on form")
+		@Test(priority=16,description = "Registration Page : Validate error should displayed on leaving mandatory fields on form")
 		public void checkMandatoryFieldsOnLeavinfEmpty() throws InterruptedException{
 			
 			
@@ -320,7 +320,7 @@ public class RegistrationTest  extends TestBase{
 		
 		
 		
-		@Test(priority=17,description = "Validate proper error message should displayed on providing invalid data in vehicales field")
+		@Test(priority=17,description = "Registration Page : Validate proper error message should displayed on providing invalid data in vehicales field")
 		public void VehiclesFieldWithCharacter() throws InterruptedException{
 			
 			String number = "qw";
@@ -334,7 +334,7 @@ public class RegistrationTest  extends TestBase{
 		
 		
 		
-		@Test(priority=18,description = "Validate error message should displayed on providing invalid data in group size field")
+		@Test(priority=18,description = "Registration Page : Validate error message should displayed on providing invalid data in group size field")
 		public void checkGroupSizeWithString() throws InterruptedException{
 			
 			
@@ -348,7 +348,7 @@ public class RegistrationTest  extends TestBase{
 		
 		
 		
-		@Test(priority=19,description = "Validate page heading is displaying on page")
+		@Test(priority=19,description = "Registration Page : Validate page heading is displaying on page")
 		public void HomePageTitleTest(){
 			
 			
@@ -356,13 +356,13 @@ public class RegistrationTest  extends TestBase{
 			String title = RegisPage.validatePageTitle();
 			Assert.assertEquals(title, "Register Your Group");
 		}
-		@Test(priority=20,description = "Validate banner is displaying on page")
+		@Test(priority=20,description = "Registration Page : Validate banner is displaying on page")
 		public void CheckBanner(){
 			boolean flag = RegisPage.validateBanner();
 			Assert.assertTrue(flag);
 		}
 		
-		@Test(priority=21,description = "Validate Group type displayed correct as per given data ")
+		@Test(priority=21,description = "Registration Page : Validate Group type displayed correct as per given data ")
 		public void validateGroupText1(){
 			
 			String group = RegisPage.validateTheOriginal();
@@ -372,7 +372,7 @@ public class RegistrationTest  extends TestBase{
 		
 		
 		
-		@Test(priority=22,description = "Validate Group size displaying correct as per given data")
+		@Test(priority=22,description = "Registration Page : Validate Group size displaying correct as per given data")
 		public void validateGroupSize(){
 			
 			String date = RegisPage.validateGroupSize();
@@ -382,34 +382,34 @@ public class RegistrationTest  extends TestBase{
 		
 		
 		
-		@Test(priority=23,description = "Validate on clicking choose date from sub bar menu is working fine and choose date page should navigate by clicking this link")
+		@Test(priority=23,description = "Registration Page : Validate on clicking choose date from sub bar menu is working fine and choose date page should navigate by clicking this link")
 		public void validateChoosFromMenuBar(){
 			chooseTour = RegisPage.validateChooseTourMenuOption();
 				
 		
 		}
 		
-		@Test(priority=24,description = "Validate date should displayed as per given data")
+		@Test(priority=24,description = "Registration Page : Validate date should displayed as per given data")
 		public void validateChoosDateFromMenuBar(){
 			chooseDate = RegisPage.validateChooseDateOption();
 				
 		
 		}
 		
-		@Test(priority=25,description = "Validate Heading of page displaying ")
+		@Test(priority=25,description = "Registration Page : Validate Heading of page displaying ")
 		public void HeadingValidate1(){
 			boolean flag = RegisPage.validatePageHeading();
 			Assert.assertTrue(flag);
 		}
 
-		@Test(priority=26,description = "Validate login button is working fine,it should navigate onlogin page")
+		@Test(priority=26,description = "Registration Page : Validate login button is working fine,it should navigate onlogin page")
 		public void validateLoginButton(){
 			loginPage = RegisPage.validateloginbutton();
 				
 		
 		}
 		
-		@Test(priority=27,description = "Validate forgot password link is working fine")
+		@Test(priority=27,description = "Registration Page : Validate forgot password link is working fine")
 		public void validateForgot(){
 			fgPage = RegisPage.validateforgotpw();
 				
@@ -419,32 +419,32 @@ public class RegistrationTest  extends TestBase{
 		
 		
 
-		@Test(priority=28,description = "Validate form heading is display fine")
+		@Test(priority=28,description = "Registration Page : Validate form heading is display fine")
 		public void ValidateHeading2(){
 			boolean flag = RegisPage.validateheading2();
 			Assert.assertTrue(flag);
 		}
 		
-		@Test(priority=29,description = "Validate form heading of section display fine")
+		@Test(priority=29,description = "Registration Page : Validate form heading of section display fine")
 		public void ValidateHeading3(){
 			boolean flag = RegisPage.validateheading3();
 			Assert.assertTrue(flag);
 		}
 		
-		@Test(priority=30,description = "Validate form section heading should displaying fine")
+		@Test(priority=30,description = "Registration Page : Validate form section heading should displaying fine")
 		public void ValidateHeading4(){
 			boolean flag = RegisPage.validateheading4();
 			Assert.assertTrue(flag);
 		}
 		
-		@Test(priority=31,description = "Validate form section heading should displaying fine")
+		@Test(priority=31,description = "Registration Page : Validate form section heading should displaying fine")
 		public void ValidateHeading5(){
 			boolean flag = RegisPage.validateheading5();
 			Assert.assertTrue(flag);
 		}
 		
 		
-		@Test(priority=32,description = "Validate link for gues service should work fine")
+		@Test(priority=32,description = "Registration Page : Validate link for gues service should work fine")
 		public void validateService(){
 			service = RegisPage.validatevisitGuestService();
 				

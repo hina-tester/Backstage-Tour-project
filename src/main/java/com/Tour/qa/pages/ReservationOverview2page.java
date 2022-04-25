@@ -41,7 +41,7 @@ public class ReservationOverview2page  extends TestBase {
 		
 public String checkPurchanseTicketButton(){  //If we enter guest,confirm button title becom purchase,which is wrong
 				
-	driver.findElement(By.xpath("//input[@id='confirm-payment-button']")).click();
+	driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/input[4]")).click();
 	
 	return headingofpur.getText();  
 			}
@@ -52,7 +52,7 @@ public String checkModifyButton() throws InterruptedException{  //If we enter gu
 	
 	Thread.sleep(8000);
 	
-	return headingofmodify.getText();  
+	return driver.findElement(By.xpath("//*[@id=\"content-body\"]/div[1]/div/div/div[2]/h1")).getText();  
 			}
 
 

@@ -6,6 +6,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -309,7 +311,7 @@ public class ModifyCancelPage  extends TestBase {
 			//		String id = "4432";
 
 				
-            driver.findElement(By.xpath("//tbody/tr[@id='" + id + "']/td[8]/a[1]")).click();
+            driver.findElement(By.xpath("//tbody/tr[@id='"+ id+"']/td[8]/a[1]")).click();
             Thread.sleep(5000);
             
           return  headingResend.isDisplayed();
@@ -395,7 +397,7 @@ Thread.sleep(5000);
 }	
 
 
-public Boolean CheckcDeleteTour(String id) throws InterruptedException{
+public boolean CheckcDeleteTour(String id) throws InterruptedException{
 	
 	
 	//		String id = "4480";
@@ -421,7 +423,7 @@ return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]
 
 
 ////date function///
-public Boolean checkDate(String id) throws ParseException{
+public boolean checkDate(String id) throws ParseException{
 	
 	
 	//		String id = "4480";
@@ -432,7 +434,7 @@ public Boolean checkDate(String id) throws ParseException{
 	
 	
 	
-	String d= driver.findElement(By.xpath("//tbody/tr[@id='"+ id +"']/td[2]")).getText();
+	String d= driver.findElement(By.xpath("//tbody/tr[@id='"+ id+"']/td[2]")).getText();
 	
 	
 //	String d = date.getText();
@@ -461,8 +463,8 @@ public Boolean checkDate(String id) throws ParseException{
 	 
 	 //these buttons will be displayed if tour date is not current date and after date
 	 
-	 WebElement cancelbutt = driver.findElement(By.xpath("//tbody/tr[@id='"+id+"']/td[10]/a[1]"));
-	 WebElement modifybutt = driver.findElement(By.xpath("//tbody/tr[@id='" + id + "']/td[9]/a[1]"));
+//	 WebElement cancelbutt = driver.findElement(By.xpath("//tbody/tr[@id='"+id+"']/td[10]/a[1]"));
+//	 WebElement modifybutt = driver.findElement(By.xpath("//tbody/tr[@id='" + id + "']/td[9]/a[1]"));
 	 
 	 Calendar cal1 = Calendar.getInstance();
 	 Calendar cal2 = Calendar.getInstance();
@@ -478,40 +480,64 @@ public Boolean checkDate(String id) throws ParseException{
 		 
 	 }
 	 
-if (cal2.equals(cal1)) {   //if tour date has been passed or current, cancel and mocify button should not displayed for that tour
+	 
+	 
+if (cal2.equals(cal1) && cal2.after(cal1)) {   //if tour date has been passed or current, cancel and mocify button should not displayed for that tour
 		 
 		 System.out.print("both equal");
+		
 		 
-		 if (cancelbutt.isDisplayed() ) {
+		 
+		 try {
+			 
+		
+		 if (driver.findElement(By.xpath("//tbody/tr[@id='"+id+"']/td[10]/a[1]")).isDisplayed() ) {
+			 
+			 
 				
-				System.out.println("cancel button displayed");
+				System.out.println("cancel button not displayed");
 				
 		        allPresent = false;
 		       
 		    }
+		
+		 }
+		 catch (NoSuchElementException e)
+		 {
+		 // I believe you dont have to do anything here. May be a console log will do.
+		 }
+		 
+		 try {
+		 
+			if (driver.findElement(By.xpath("//tbody/tr[@id='" + id + "']/td[9]/a[1]")).isDisplayed() ) {
+				
+				System.out.println("modify button not displayed");
+				
+		        allPresent = false;
+		       
+		    }}
 			
-			if (modifybutt.isDisplayed() ) {
-				
-				System.out.println("modify button displayed");
-				
-		        allPresent = false;
-		       
-		    }
+			 catch (NoSuchElementException e)
+			 {
+			 // I believe you dont have to do anything here. May be a console log will do.
+			 }
 	 }
+
+/*
 if (cal2.after(cal1)) {
 	 
 	 System.out.print("after");
-	 if (cancelbutt.isDisplayed() ) {
+	 if (driver.findElement(By.xpath("//tbody/tr[@id='" + id + "']/td[9]/a[1]")).isDisplayed() ) {
 			
-			System.out.println("cancel button displayed");
+			System.out.println("cancel button not displayed");
 			
 	        allPresent = false;
 	       
 	    }
 		
-		if (modifybutt.isDisplayed() ) {
+		if (driver.findElement(By.xpath("//tbody/tr[@id='" + id + "']/td[9]/a[1]")).isDisplayed() ) {
 			
-			System.out.println("modify button displayed");
+			System.out.println("modify button not displayed");
 			
 	        allPresent = false;
 	       
@@ -519,7 +545,7 @@ if (cal2.after(cal1)) {
 	 
 	 
 	 
-}
+}*/
 return allPresent;
 	
 }	
@@ -601,7 +627,7 @@ public void PlaceOrder(String monthYear, String date) throws InterruptedExceptio
 	
 	
 	System.out.println(AvailableNumber);
-	String timing = driver.findElement(By.xpath("//div[@class='fc-day-number'][text()='"+ date+ "']//following::a[1]/div[@class='timeContainer']")).getText();
+	String timing = driver.findElement(By.xpath("//div[@class='fc-day-number' and text()='"+date+"']//following::a[1]/div[@class='timeContainer']")).getText();
 
 	System.out.println(timing);
 	

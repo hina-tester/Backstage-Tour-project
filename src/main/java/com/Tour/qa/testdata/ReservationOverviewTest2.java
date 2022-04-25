@@ -82,7 +82,8 @@ public class ReservationOverviewTest2 extends TestBase{
 						
 	}
 	
-	@Test(priority=1,description = "Validate Purchase button work fine on adding more guest on Reservation Overview page")
+	
+	@Test(priority=1,description = "RESERVATION OVERVIEW page 2 : Validate Purchase button work fine on adding more guest on Reservation Overview page")
 	public void checkPurchanseTicketButton(){
 		
 		String  PageTitle =  res2.checkPurchanseTicketButton();
@@ -91,7 +92,7 @@ public class ReservationOverviewTest2 extends TestBase{
 	}
 	
 	
-	@Test(priority=2,description = "Validate Modify button work fine on adding more guest on Reservation Overview page")
+	@Test(priority=2,description = "RESERVATION OVERVIEW page 2 :Validate Modify button work fine on adding more guest on Reservation Overview page")
 	public void checkModifyButton() throws InterruptedException{
 		
 		String  PageTitle =  res2.checkModifyButton();
@@ -99,7 +100,8 @@ public class ReservationOverviewTest2 extends TestBase{
 		
 	}
 	
-	@Test(priority=3,description = "Validate cancel button work fine on adding more guest on Reservation Overview page")
+	
+	@Test(priority=3,description = "RESERVATION OVERVIEW page 2 :Validate cancel button work fine on adding more guest on Reservation Overview page")
 	public void checkCancleButton() throws InterruptedException{
 		
 		String  PageTitle =  res2.checkCancleButton();

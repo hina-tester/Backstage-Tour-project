@@ -43,7 +43,7 @@ public class LoginTest extends TestBase{
 	}
 	
 	
-	@Test(priority=1,description = "Validate Login page title display as expected")
+	@Test(priority=1,description = "Login Page: Validate Login page title display as expected")
 	public void loginPageTitleTest(){
 		
 		
@@ -51,27 +51,27 @@ public class LoginTest extends TestBase{
 		Assert.assertEquals(title, "Logon");
 	}
 
-	@Test(priority=2,description = "Validate  logo should display as expected")
+	@Test(priority=2,description = "Login Page: Validate  logo should display as expected")
 	public void CheckLogo(){
 		boolean flag = loginPage.validateLogo();
 		Assert.assertTrue(flag);
 	}
 	
 	
-	@Test(priority=3,description = "Validate login button work fine and Modify/cancle page should be displayed after login")
+	@Test(priority=3,description = "Login Page: Validate login button work fine and Modify/cancle page should be displayed after login")
 	public void loginTest(){
 		modify = loginPage.login(prop.getProperty("email"), prop.getProperty("pw"));
 	}
 	
 	
-	@Test(priority=4,description = "Validate error should be displayed on providing invalid email")
+	@Test(priority=4,description = "Login Page: Validate error should be displayed on providing invalid email")
 	public void loginTestInvalidEmail(Method method){   //invalid email/pw
 	
 		boolean flag = loginPage.loginInvalidEmailPassword();
 		Assert.assertTrue(flag);
 	}
 	
-	@Test(priority=5,description = "Validate error should be displayed on providing no email")
+	@Test(priority=5,description = "Login Page: Validate error should be displayed on providing no email")
 	public void loginPageOnEmptyEmailField(){   //empty fields
 		
 		boolean flag = loginPage.loginEmpty();

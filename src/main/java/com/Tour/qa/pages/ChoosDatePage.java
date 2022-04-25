@@ -14,7 +14,7 @@ public class ChoosDatePage extends TestBase{
 
 	//Page Factory
 	
-		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div/div[1]/div[2]")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/h1")
 		@CacheLookup
 		WebElement ChooseDateHeading;
 		
@@ -51,7 +51,7 @@ public class ChoosDatePage extends TestBase{
 		WebElement NextButt;
 		
 
-		@FindBy(xpath="//*[@id=\"calendarDiv\"]/div[2]/div/div/div/a/div[1]/span[2]")
+		@FindBy(xpath="//*[@id=\"content-body\"]/div[1]/div/div/div[2]/div/div[1]/div[1]/a")
 		@CacheLookup
 		WebElement ChoosTour;
 

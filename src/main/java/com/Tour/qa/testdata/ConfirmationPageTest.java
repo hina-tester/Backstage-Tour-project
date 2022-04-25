@@ -81,7 +81,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=1,description = "Validate tour type displayed as expected")
+	@Test(priority=1,description = "Confirmation Page: Validate tour type displayed as expected")
 	public void ValidateTourType(){
 		
 		
@@ -92,7 +92,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=2,description = "Validate First name display as expected")
+	@Test(priority=2,description = "Confirmation Page: Validate First name display as expected")
 	public void Validatefname(){
 			
 		 String fname = "fname";
@@ -102,7 +102,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 
-	@Test(priority=3,description = "Validate Last name display as expected")
+	@Test(priority=3,description = "Confirmation Page: Validate Last name display as expected")
 	public void ValidateLname(){
 		
 		String lname = "lname";
@@ -113,7 +113,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=4,description = "Validate cost should display as expected")
+	@Test(priority=4,description = "Confirmation Page: Validate cost should display as expected")
 	public void ValidateCost(){
 		
 	
@@ -144,7 +144,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=5,description = "Validate ZipCode display as expected")
+	@Test(priority=5,description = "Confirmation Page: Validate ZipCode display as expected")
 	public void ValidateZip(){
 			
 		String zip1 = "11122";
@@ -154,7 +154,7 @@ public class ConfirmationPageTest  extends TestBase{
 		
 		
 	}
-	@Test(priority=6,description = "Validate Mobile number should display as expected")
+	@Test(priority=6,description = "Confirmation Page: Validate Mobile number should display as expected")
 	public void ValidateMobile(){
 		
 		String mob = "3214679421";
@@ -167,7 +167,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=7,description = "Validate Group Size should display as expected on top of the page")
+	@Test(priority=7,description = "Confirmation Page: Validate Group Size should display as expected on top of the page")
 	public void ValidateGroupSize(){
 		
 		String GroupSzie = prop.getProperty("groupsize");
@@ -179,7 +179,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=8,description = "Validate Group Type display as expected")
+	@Test(priority=8,description = "Confirmation Page: Validate Group Type display as expected")
 	public void ValidateTypeOfGrop(){
 		
 		 String TypeOfGroup = "Family with Kids";
@@ -189,7 +189,7 @@ public class ConfirmationPageTest  extends TestBase{
 				
 			
 	}
-	@Test(priority=9,description = "Validate Group name display as expected")
+	@Test(priority=9,description = "Confirmation Page: Validate Group name display as expected")
 	public void ValidateNameOfGroup(){
 		
 		 String NameOfGroup = "new group";
@@ -200,7 +200,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=10,description = "Validate Travelling option should display as expected")
+	@Test(priority=10,description = "Confirmation Page: Validate Travelling option should display as expected")
 	public void ValidateTravell(){
 		
 		 String travill = "Car";
@@ -211,7 +211,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=11,description = "Validate Vehical number should displayed as expected")
+	@Test(priority=11,description = "Confirmation Page: Validate Vehical number should displayed as expected")
 	public void ValidateVehical(){
 		
 		 String vihical1 = "2";
@@ -224,7 +224,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	//----------
 	
-	@Test(priority=12,description = "Validate Page Banner should display on page")
+	@Test(priority=12,description = "Confirmation Page: Validate Page Banner should display on page")
 	public void validateBannerTest(){
 			
 		boolean flag = confirmPage.validateBanner();
@@ -233,7 +233,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=13,description = "Validate Group type should display as expected")
+	@Test(priority=13,description = "Confirmation Page: Validate Group type should display as expected")
 	public void validateTheOriginalTest(){
 		
 		String groupty = confirmPage.validateTheOriginal();
@@ -242,7 +242,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 
-	@Test(priority=14,description = "Validate page title should display as expected")
+	@Test(priority=14,description = "Confirmation Page: Validate page title should display as expected")
 	public void validateTitle(){
 		
 		String title = confirmPage.validatePageTitle();
@@ -252,7 +252,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 
-	@Test(priority=16,description = "Validate Group Size on page data should display as expected")
+	@Test(priority=16,description = "Confirmation Page: Validate Group Size on page data should display as expected")
 	public void validateGroupSizeTest(){
 		
 		String size = confirmPage.validateGroupSize();
@@ -261,7 +261,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=17,description = "Validate choose tour from menu bar should display and work as expected")
+	@Test(priority=17,description = "Confirmation Page: Validate choose tour from menu bar should display and work as expected")
 	public void validateChooseTourMenuOption(){
 		
 		chooseTour	 = confirmPage.validateChooseTourMenuOption();
@@ -269,7 +269,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=18,description = "Validate choose Date option form menu bar display and work as expected")
+	@Test(priority=18,description = "Confirmation Page: Validate choose Date option form menu bar display and work as expected")
 	public void validateChooseDateOption(){
 		
 		chooseDate	 = confirmPage.validateChooseDateOption();
@@ -277,14 +277,14 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=19,description = "Validate Rigistration option from menu bar should display and work as expected")
+	@Test(priority=19,description = "Confirmation Page: Validate Rigistration option from menu bar should display and work as expected")
 	public void validateRegistration(){
 		
 		RegisPage	 = confirmPage.validateRegistration();
 	
 	}
 	
-	@Test(priority=20,description = "Validate Confirm page option from menu bar should display and work as expected")
+	@Test(priority=20,description = "Confirmation Page: Validate Confirm page option from menu bar should display and work as expected")
 	public void validateTick(){
 		
 		boolean flag = confirmPage.validateTick();
@@ -292,7 +292,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	}
 	
-	@Test(priority=21,description = "Validate Page heading should display as expected")
+	@Test(priority=21,description = "Confirmation Page: Validate Page heading should display as expected")
 	public void validatePageHeading(){
 		
 		boolean flag = confirmPage.validatePageHeading();
@@ -301,7 +301,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=22,description = "Validate Purchase Ticket Button should work as expected")
+	@Test(priority=22,description = "Confirmation Page: Validate Purchase Ticket Button should work as expected")
 	public void validatePurchaseTicketButt(){
 		
 		payment = confirmPage.validatePurchaseTicketButt();
@@ -310,7 +310,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=23,description = "Validate Heading 1 should display as expected")
+	@Test(priority=23,description = "Confirmation Page: Validate Heading 1 should display as expected")
 	public void validateHeading1(){
 		
 		boolean flag = confirmPage.validateHeading1();
@@ -318,21 +318,21 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	}
 	
-	@Test(priority=24,description = "Validate Page heading 2 should display as expected")
+	@Test(priority=24,description = "Confirmation Page: Validate Page heading 2 should display as expected")
 	public void validateHeading2(){
 		
 		boolean flag = confirmPage.validateHeading2();
 		Assert.assertTrue(flag);
 	
 	}
-	@Test(priority=25,description = "Validate Page heading 3 should display as expected")
+	@Test(priority=25,description = "Confirmation Page: Validate Page heading 3 should display as expected")
 	public void validateHeading3(){
 		
 		boolean flag = confirmPage.validateHeading3();
 		Assert.assertTrue(flag);
 	
 	}
-	@Test(priority=26,description = "Validate page heading 4 should display as expected")
+	@Test(priority=26,description = "Confirmation Page: Validate page heading 4 should display as expected")
 	public void validateHeading4(){
 		
 		boolean flag = confirmPage.validateHeading4();
@@ -340,7 +340,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	}
 	
-	@Test(priority=27,description = "Validate heading 5 should display as expected")
+	@Test(priority=27,description = "Confirmation Page: Validate heading 5 should display as expected")
 	public void validateHeading5(){
 		
 		boolean flag = confirmPage.validateHeading5();
@@ -349,7 +349,7 @@ public class ConfirmationPageTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=28,description = "Validate Purchase Ticket from bottom of the page should work as expected")
+	@Test(priority=28,description = "Confirmation Page: Validate Purchase Ticket from bottom of the page should work as expected")
 	public void validatePurchaseTicketButt2(){
 		
 		payment = confirmPage.validatePurchaseTicketButt2();
@@ -357,7 +357,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	}
 	
-	@Test(priority=29,description = "Validate Modify Reservation button should work as expected")
+	@Test(priority=29,description = "Confirmation Page: Validate Modify Reservation button should work as expected")
 	public void validateModifyReservationButt2(){
 		
 		chooseDate = confirmPage.validateModifyReservationButt2();
@@ -365,7 +365,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	}
 	
-	@Test(priority=30,description = "Validate Cancel button should work as expected")
+	@Test(priority=30,description = "Confirmation Page: Validate Cancel button should work as expected")
 	public void validateCancelButt2(){
 		
 		homePage = confirmPage.validateCancelButt2();
@@ -375,7 +375,7 @@ public class ConfirmationPageTest  extends TestBase{
 	
 	
 	
-	@Test(priority=31,description = "Validate Main menu should display as expected on top of the page")
+	@Test(priority=31,description = "Confirmation Page: Validate Main menu should display as expected on top of the page")
 	public void CheckTopMenu(){
 		
 		boolean flag = confirmPage.validatemenu();

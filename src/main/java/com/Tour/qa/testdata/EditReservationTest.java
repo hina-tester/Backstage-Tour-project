@@ -81,7 +81,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=1,description = "Validate Page heading displayed as expected")
+	@Test(priority=1,description = "EDIT YOUR RESERVATION page : Validate Page heading displayed as expected")
 	public void valiPageHeading(){
 		
 		boolean  flag =  editReservation.PageHeading();
@@ -91,7 +91,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=2,description = "Validate Date display as expected")
+	@Test(priority=2,description = "EDIT YOUR RESERVATION page: Validate Date display as expected")
 	public void validate(){
 		
 		boolean  flag =  editReservation.date();
@@ -101,7 +101,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=3,description = "Validate time of choosen slot display as expected")
+	@Test(priority=3,description = "EDIT YOUR RESERVATION page: Validate time of choosen slot display as expected")
 	public void validatetime(){
 		
 		boolean  flag =  editReservation.time();
@@ -111,7 +111,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=4,description = "Validate Edit Date link should work as expected")
+	@Test(priority=4,description = "EDIT YOUR RESERVATION page : Validate Edit Date link should work as expected")
 	public void validateEditDateLink(){
 		
 		boolean  flag =  editReservation.EditDateLink();
@@ -121,7 +121,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=5,description = "Validate Group size display as expected")
+	@Test(priority=5,description = "EDIT YOUR RESERVATION page : Validate Group size display as expected")
 	public void validateGroupSize(){
 		
 	 editReservation.GroupSizeLock();
@@ -131,7 +131,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 
-	@Test(priority=6,description = "Validate Special needs section should only display when 'yes' is selected")
+	@Test(priority=6,description = "EDIT YOUR RESERVATION page : Validate Special needs section should only display when 'yes' is selected")
 	public void validatesNeed(){
 		
 		boolean  flag = editReservation.CheckSpecialNeedOption();
@@ -141,7 +141,7 @@ public class EditReservationTest extends TestBase {
 	
 
 
-	@Test(priority=7,description = "Validate 'Visit Guest Services for more information' link should work as expected")
+	@Test(priority=7,description = "EDIT YOUR RESERVATION page : Validate 'Visit Guest Services for more information' link should work as expected")
 	public void validalink(){
 		
 		service= editReservation.guestLink();
@@ -150,7 +150,7 @@ public class EditReservationTest extends TestBase {
 	}
 	
 	
-	@Test(priority=8,description = "Edit the form fields and validate form should updated successfully")  //check edit form by fillinf valid data and clicking button
+	@Test(priority=8,description = "EDIT YOUR RESERVATION page : Edit the form fields and validate form should updated successfully")  //check edit form by fillinf valid data and clicking button
 	
 	public void validaeditForm() throws InterruptedException{
 		
@@ -161,7 +161,7 @@ public class EditReservationTest extends TestBase {
 	}
 
 
-	@Test(priority=9,description = "Error should be display on clicking button without providing any data on form")
+	@Test(priority=9,description = "EDIT YOUR RESERVATION page : Error should be display on clicking button without providing any data on form")
 	public void validaedtiEmptyForm(){
 		
 		boolean  flag =  editReservation.CheckEditReservationFormWithEmpty();
@@ -172,7 +172,7 @@ public class EditReservationTest extends TestBase {
 	
 	
 
-	@Test(priority=10,description = "Validate 'Additional Guests' should display on clicking submit button on leaving empty or providing invalid input for group name and vehical number field")
+	@Test(priority=10,description = "EDIT YOUR RESERVATION page: Validate 'Additional Guests' should display on clicking submit button on leaving empty or providing invalid input for group name and vehical number field")
 	public void GuestFieldOnErrorPage(){
 		
 		boolean  flag =  editReservation.guestFieldOnerrorpage();

@@ -55,7 +55,7 @@ public class ChooseDateTest extends TestBase{
 	}
 	
 	
-	@Test(priority=1 ,description = "Verify Page title is displaying correct")
+	@Test(priority=1 ,description = "Choose Date Page:Verify Page title is displaying correct")
 	public void CheckPageTitle(){
 	//	extentTest = extent.startTest("CheckPageTitle");
 		
@@ -64,7 +64,7 @@ public class ChooseDateTest extends TestBase{
 		
 	}
 	
-	@Test(priority=2 ,description = "Verify Page Banner is display or not")
+	@Test(priority=2 ,description = "Choose Date Page:Verify Page Banner is display or not")
 	public void validateBanne(){
 		boolean flag = chooseDate.validateBanner();
 		Assert.assertTrue(flag);
@@ -72,22 +72,22 @@ public class ChooseDateTest extends TestBase{
 	
 	
 	
-	@Test(priority=3,description = " Verify Page Heading is displaying correct")
+	@Test(priority=3,description = "Choose Date Page: Verify Page Heading is displaying correct")
 	public void validateHeading(){
 		boolean flag = chooseDate.validatePageHeading();
 		Assert.assertTrue(flag);
 	}
 	
 	
-	@Test(priority=4,description = "Validate that user successfully navigate on next page")
-	public void validateChoosFromMenu(){
+	@Test(priority=4,description = "Choose Date Page:When user click Choose Tour form menu bar, user should redirect on Choose Tour page")
+	public void validateChoosTourFromMenu(){
 		chooseTour = chooseDate.validateChooseTourMenuOption();
 			
 	
 	}
 	
 
-	@Test(priority=5,description = "validate the group type is displaying correct")
+	@Test(priority=5,description = "Choose Date Page:Choose Date Page:validate the group type is displaying correct")
 	public void validateTheOriginal(){
 				
 		String text = chooseDate.validateTheOriginal();
@@ -98,7 +98,7 @@ public class ChooseDateTest extends TestBase{
 	
 	
 	
-	@Test(priority=6,description = "validate that Group Size is displaying correct")
+	@Test(priority=6,description = "Choose Date Page:Choose Date Page:validate that Group Size is displaying correct")
 	public void validateGroupSize(){
 				
 		String text = chooseDate.validateGroupSize();
@@ -108,7 +108,7 @@ public class ChooseDateTest extends TestBase{
 	}
 	
 		
-	@Test(priority=7,description = "Validate that user can navigate successfully by selecting valid date of available slot")
+	@Test(priority=7,description = "Choose Date Page:Validate that user can navigate successfully by selecting valid date of available slot")
 	public void SelectValidSlotTest() throws InterruptedException{
 				
 		RegisPage = chooseDate.SelectValidSlot(prop.getProperty("monthYear"), prop.getProperty("date"));
@@ -117,7 +117,7 @@ public class ChooseDateTest extends TestBase{
 	
 	
 
-	@Test(priority=8,description = "Validate that message displayed for not available slot")
+	@Test(priority=8,description = "Choose Date Page:Validate that message displayed for not available slot")
 	public void SelectInValidSlot() throws InterruptedException{
 				
 		boolean flag = chooseDate.SelectInValidSlot("May 2022","3");
@@ -126,7 +126,7 @@ public class ChooseDateTest extends TestBase{
 	}
 	
 	
-	@Test(priority=10 ,description = "Validate Group Size display correct based on give data on previous page")
+	@Test(priority=10 ,description = "Choose Date Page:Validate Group Size display correct based on give data on previous page")
 	public void validateGroupSize2(){
 				
 		String text = chooseDate.validateGroupSize2();

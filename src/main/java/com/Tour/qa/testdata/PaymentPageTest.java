@@ -82,7 +82,7 @@ public class PaymentPageTest extends TestBase {
 					
 	}
 	
-	@Test(priority=1,description = "Validate page Title should display as expected")
+	@Test(priority=1,description = "Payment Page: Validate page Title should display as expected")
 	public void validateTitle(){
 		
 		String title = payment.validatePageTitle();
@@ -92,7 +92,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=2,description = "Validate Quantity should display as expected")
+	@Test(priority=2,description = "Payment Page: Validate Quantity should display as expected")
 	public void validateQuantityTest(){
 		
 		String quantity = payment.validateQuantity();
@@ -103,7 +103,7 @@ public class PaymentPageTest extends TestBase {
 	
 	
 
-	@Test(priority=3,description = "Validate Unit should display as expected")
+	@Test(priority=3,description = "Payment Page: Validate Unit should display as expected")
 	public void validateUnit(){
 
 		String unito = "$10.00";// for original
@@ -116,7 +116,7 @@ public class PaymentPageTest extends TestBase {
 	
 	
 	
-	@Test(priority=4,description = "Validate Tax should display as expected")
+	@Test(priority=4,description = "Payment Page: Validate Tax should display as expected")
 	public void validateTax(){  //display 2 digit after dot the amount without rounding last value
 		
 		double subTotal;
@@ -152,7 +152,7 @@ public class PaymentPageTest extends TestBase {
 	
 	
 	
-	@Test(priority=5,description = "Validate Prise should display as expected")
+	@Test(priority=5,description = "Payment Page: Validate Prise should display as expected")
 	public void validatePrice(){
 		
 		double subTotal,quantity,unit;
@@ -179,7 +179,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 
-	@Test(priority=6,description = "Validate Total should display as expected")
+	@Test(priority=6,description = "Payment Page: Validate Total should display as expected")
 	public void validateTotal(){
 		
 		double  subTotal,quantity,unit;
@@ -206,7 +206,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=7,description = "Validate Payment should display as expected")
+	@Test(priority=7,description = "Payment Page: Validate Payment should display as expected")
 	public void validatePayment(){
 		
 		//still no valid card is available there for this will not pass
@@ -223,7 +223,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=8,description = "Validate, if user click button without providing any data,error should display as expected")
+	@Test(priority=8,description = "Payment Page: Validate, if user click button without providing any data,error should display as expected")
 	public void validatePaymentwithemptyInput(){
 		
 		//still no valid card is available there for this will not pass
@@ -234,7 +234,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=9,description = "Validate,if user provide invalid data for card,error should display as expected")
+	@Test(priority=9,description = "Payment Page: Validate,if user provide invalid data for card,error should display as expected")
 	public void validatePaymentwithinvalidInput(){
 		
 		//still no valid card is available there for this will not pass
@@ -245,7 +245,7 @@ public class PaymentPageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=10,description = "Validate Back link work as expected")
+	@Test(priority=10,description = "Payment Page: Validate Back link work as expected")
 	
 	public void ValidateBackLink(){
 		

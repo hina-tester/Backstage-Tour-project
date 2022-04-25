@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Chick-fil-A®Backstage Tour Test Cases 1(failed)">
     <classes>
+      <class name="com.Tour.qa.testdata.ChooseDateTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateChoosFromMenu"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Tour.qa.testdata.ChooseDateTest -->
       <class name="com.Tour.qa.testdata.ReservationOverviewTest">
         <methods>
           <include name="tearDown"/>
@@ -69,6 +76,8 @@
           <include name="tearDown"/>
           <include name="checkResend"/>
           <include name="checkModify"/>
+          <include name="CheckDateOfReservationShouldDisplayFine"/>
+          <include name="PurchaceTicket"/>
           <include name="checkCloseCancelwin"/>
         </methods>
       </class> <!-- com.Tour.qa.testdata.ModifyCancelTest -->

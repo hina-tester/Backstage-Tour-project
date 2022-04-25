@@ -87,7 +87,7 @@ public class PrintTicketTest extends TestBase{
 	
 
 
-	@Test(priority=2,description = "Validate banner should display on page")
+	@Test(priority=2,description = "Print Ticket Page : Validate banner should display on page")
 	public void validateBanner(){
 		
 		boolean flag= print.validateBanner();
@@ -97,7 +97,7 @@ public class PrintTicketTest extends TestBase{
 	}	
 	
 
-	@Test(priority=3,description = "Validate Top menu should display as expected")
+	@Test(priority=3,description = "Print Ticket Page : Validate Top menu should display as expected")
 	public void validatemenu(){
 		
 		boolean flag= print.validatemenu();
@@ -109,7 +109,7 @@ public class PrintTicketTest extends TestBase{
 	
 
 
-	@Test(priority=4,description = "Validate choose Tour option from bar menu should work as expected")
+	@Test(priority=4,description = "Print Ticket Page : Validate choose Tour option from bar menu should work as expected")
 	public void ChooseTourshouldBeClickableFromManuBar(){
 		
 		boolean heading = print.validatechooseTour();
@@ -122,7 +122,7 @@ public class PrintTicketTest extends TestBase{
 	
 
 
-	@Test(priority=5,description = "Validate Registration option from menu bar should work as expected")
+	@Test(priority=5,description = "Print Ticket Page : Validate Registration option from menu bar should work as expected")
 	public void RegistrationShouldBeClickableFromMenuBar(){
 		
 		boolean heading = print.RegistrationPage();
@@ -134,7 +134,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 
-	@Test(priority=6,description = "Validate choose Date option from bar menu shoul work as expected")
+	@Test(priority=6,description = "Print Ticket Page : Validate choose Date option from bar menu shoul work as expected")
 	public void ChooseDateShouldBeClickableFromMenuBar(){
 		
 		boolean heading =  print.validatechooseDate();
@@ -145,7 +145,7 @@ public class PrintTicketTest extends TestBase{
 
 	
 
-	@Test(priority=7,description = "Validate Confirmation and purchase ticket option from menu bar should work as expected")
+	@Test(priority=7,description = "Print Ticket Page : Validate Confirmation and purchase ticket option from menu bar should work as expected")
 	public void ConfirmAndPurchaseShouldBeClickableFromMenuBar(){
 		
 		boolean heading  = print.validateconfirm();
@@ -157,7 +157,7 @@ public class PrintTicketTest extends TestBase{
 
 
 	
-	@Test(priority=8,description = "Validate Tick for Registration option should display as expected")
+	@Test(priority=8,description = "Print Ticket Page : Validate Tick for Registration option should display as expected")
 	public void TickForRegistrationShouldBeClickable(){
 		
 		boolean heading  = print.tick1();
@@ -167,7 +167,7 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 
-	@Test(priority=9,description = "Validate Tick for  confirm and Purchase page should display as exected")
+	@Test(priority=9,description = "Print Ticket Page : Validate Tick for  confirm and Purchase page should display as exected")
 	public void TickForConfirmationShouldBeClickable(){
 		
 		boolean heading  = print.tick2();
@@ -178,7 +178,7 @@ public class PrintTicketTest extends TestBase{
 	
 
 
-	@Test(priority=10,description = "Validate Print ticket option from menu bar should display as expected")
+	@Test(priority=10,description = "Print Ticket Page : Validate Print ticket option from menu bar should display as expected")
 	public void PrintTicketShouldBeDisplay() throws InterruptedException{
 		
 		boolean flag= print.printTicketmenu();
@@ -187,7 +187,7 @@ public class PrintTicketTest extends TestBase{
 			}
 
 
-	@Test(priority=11,description = "Validate print ticket text should display as expected")
+	@Test(priority=11,description = "Print Ticket Page : Validate print ticket text should display as expected")
 	public void PrintTicketShouldWorkFrmoMenu() throws InterruptedException{
 		
 		boolean flag= print.printTicket();
@@ -197,7 +197,7 @@ public class PrintTicketTest extends TestBase{
 		
 			}
 
-	@Test(priority=12,description = "Validate page heading  is display as expected")
+	@Test(priority=12,description = "Print Ticket Page : Validate page heading  is display as expected")
 	public void validatePageHeading1(){
 		
 		boolean flag= print.validatePageHeading1();
@@ -207,7 +207,7 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 
-	@Test(priority=13,description = "Validate page heading should display as expected")
+	@Test(priority=13,description = "Print Ticket Page : Validate page heading should display as expected")
 	public void validatePageHeading2(){
 		
 		boolean flag= print.validatePageHeading2();
@@ -218,7 +218,7 @@ public class PrintTicketTest extends TestBase{
 	
 
 
-	@Test(priority=14,description = "Validate Group type display as expected")
+	@Test(priority=14,description = "Print Ticket Page : Validate Group type display as expected")
 	public void validateOriginal(){
 		
 		boolean flag= print.validateOriginal();
@@ -228,7 +228,7 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 
-	@Test(priority=15,description = "Validate Plan Visit button should work as expected")
+	@Test(priority=15,description = "Print Ticket Page : Validate Plan Visit button should work as expected")
 	public void validatePlanVisit(){
 		
 		service= print.validatePlanvisit();
@@ -236,7 +236,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 
-	@Test(priority=16,description = "Validate Email link work as expected")
+	@Test(priority=16,description = "Print Ticket Page : Print Ticket Page : Validate Email link work as expected")
 	public void validatemailto(){
 		
 		boolean flag= print.validatemailto();
@@ -246,7 +246,7 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 
-	@Test(priority=17,description = "Validate page heading display as expected")
+	@Test(priority=17,description = "Print Ticket Page : Validate page heading display as expected")
 	public void validateheading1(){
 		
 		boolean flag= print.validateh1();
@@ -256,7 +256,7 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 
-	@Test(priority=18,description = "Validate page heading  should display as expected")
+	@Test(priority=18,description = "Print Ticket Page : Validate page heading  should display as expected")
 	public void validateheading2(){
 		
 		boolean flag= print.validateh2();
@@ -266,7 +266,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 
-	@Test(priority=19,description = "Validate page heading should display as expected")
+	@Test(priority=19,description = "Print Ticket Page : Validate page heading should display as expected")
 	public void validateheading3(){
 		
 		boolean flag= print.validateh3();
@@ -276,7 +276,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 
-	@Test(priority=20,description = "Validate page heading should display as expected")
+	@Test(priority=20,description = "Print Ticket Page : Validate page heading should display as expected")
 	public void validateheading4(){
 		
 		boolean flag= print.validateh4();
@@ -286,7 +286,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 
-	@Test(priority=21,description = "Validate Date should display as expected")
+	@Test(priority=21,description = "Print Ticket Page : Validate Date should display as expected")
 	public void validatedate(){
 		
 		boolean flag= print.datetext();
@@ -296,7 +296,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 	
-	@Test(priority=22,description = "Validate link for question")
+	@Test(priority=22,description = "Print Ticket Page : Validate link for question")
 	public void validatelinkquestion(){
 		
 		faq =  print.validatelinkquestion();
@@ -306,7 +306,7 @@ public class PrintTicketTest extends TestBase{
 	}
 
 	
-	@Test(priority=23,description = "Validate Card Holder name  should display as expected")
+	@Test(priority=23,description = "Print Ticket Page : Validate Card Holder name  should display as expected")
 	public void validatecardHolderName(){
 		
 		String name = print.validatecardHolderName();
@@ -320,7 +320,7 @@ public class PrintTicketTest extends TestBase{
 	}
 	
 
-	@Test(priority=24,description = "Validate Card Number should display as expected")
+	@Test(priority=24,description = "Print Ticket Page : Validate Card Number should display as expected")
 	public void validatecardnum(){
 		
 		String num = print.validatecardnum();

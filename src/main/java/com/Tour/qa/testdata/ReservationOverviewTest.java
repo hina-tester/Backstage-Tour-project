@@ -86,7 +86,7 @@ public class ReservationOverviewTest  extends TestBase{
 					
 	}
 
-	@Test(priority=1,description = "Validate Modify Reservation button work as expected")
+	@Test(priority=1,description = "RESERVATION OVERVIEW page: Validate Modify Reservation button work as expected")
 	public void validateeModifyButt(){
 		
 		boolean  flag =  reservation.validModifyButt();
@@ -96,7 +96,7 @@ public class ReservationOverviewTest  extends TestBase{
 	
 	
 
-	@Test(priority=3,description = "Validate Special need section data displayed as per given data by user")
+	@Test(priority=3,description = "RESERVATION OVERVIEW page: Validate Special need section data displayed as per given data by user")
 	public void checkSpecialNeed(){
 		
 		String sneed =  reservation.confirmSpecialNeed();
@@ -106,7 +106,7 @@ public class ReservationOverviewTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=4,description = "Validate  Group name display as per updated data given by user")
+	@Test(priority=4,description = "RESERVATION OVERVIEW page: Validate  Group name display as per updated data given by user")
 	public void validateGroupName(){
 		
 		String gname =  reservation.confirmGroupN();
@@ -116,7 +116,7 @@ public class ReservationOverviewTest  extends TestBase{
 	}
 
 	
-	@Test(priority=5,description = "Validate  Page heading displayed as expected")
+	@Test(priority=5,description = "RESERVATION OVERVIEW page: Validate  Page heading displayed as expected")
 	public void validatePageH(){
 		
 		boolean  flag =  reservation.validPageH();
@@ -126,7 +126,7 @@ public class ReservationOverviewTest  extends TestBase{
 	}
 	
 	
-	@Test(priority=6,description = "Validate  after clicking message should displayed 'confirmation has been send'")
+	@Test(priority=6,description = "RESERVATION OVERVIEW page: Validate  after clicking message should displayed 'confirmation has been send'")
 	public void validateConfirmButt(){
 		
 		boolean  flag =  reservation.validconfirm();
@@ -138,7 +138,7 @@ public class ReservationOverviewTest  extends TestBase{
 	
 
 
-	@Test(priority=7,description = "Validate  cancel button should work as expected and reservation should be deleted from modify page")
+	@Test(priority=7,description = "RESERVATION OVERVIEW page: Validate  cancel button should work as expected and reservation should be deleted from modify page")
 	public void vaildateCancleButt(){
 		
 		boolean  flag =  reservation.validCancle(prop.getProperty("id"));

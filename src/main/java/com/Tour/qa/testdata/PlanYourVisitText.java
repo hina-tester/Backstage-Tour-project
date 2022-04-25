@@ -74,7 +74,7 @@ public class PlanYourVisitText extends TestBase { //test calss of cusgtomerPlan 
 	
 					
 	}
-	@Test(priority=1,description = "Validate Page title should display as expected")
+	@Test(priority=1,description = "Plan your Visit Page :Validate Page title should display as expected")
 	public void validateTitle(){
 		
 		boolean  flag =  planVisit.validatePageHeading();
@@ -83,7 +83,7 @@ public class PlanYourVisitText extends TestBase { //test calss of cusgtomerPlan 
 		
 	}
 	
-	@Test(priority=2,description = "Validate Get Paid Direction button work fine")
+	@Test(priority=2,description = "Plan your Visit Page :Validate Get Paid Direction button work fine")
 	public void validateGetPaidDirectionButton(){
 		
 		boolean  flag =  planVisit.validateGetPaidDirectionButton();
@@ -92,7 +92,7 @@ public class PlanYourVisitText extends TestBase { //test calss of cusgtomerPlan 
 		
 	}
 	
-	@Test(priority=3,description = "Validate Get Google Direction button work fine")
+	@Test(priority=3,description = "Plan your Visit Page :Validate Get Google Direction button work fine")
 	public void validateGetGoogleDirectionButton(){
 		
 		boolean  flag =  planVisit.validateGetGoogleDirectionButton();

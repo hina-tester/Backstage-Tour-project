@@ -1,99 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Chick-fil-A® Backstage Tour Automation Test1]">
-  <listeners>
-    <listener class-name="com.Tour.qa.util.Reporting"/>
-  </listeners>
-  <test thread-count="5" name="Chick-fil-A®Backstage Tour Test Cases 1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tour.qa.testdata.ReservationOverviewTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="validateConfirmButt"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.ReservationOverviewTest -->
-      <class name="com.Tour.qa.testdata.LoginTest">
-        <methods>
-          <include name="loginPageOnEmptyEmailField"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.LoginTest -->
-      <class name="com.Tour.qa.testdata.RegistrationTest">
-        <methods>
-          <include name="checkFirstName"/>
-          <include name="checkLastName"/>
-          <include name="ErrorShouldDisplyOnPrpviding10CharInMobileFildOdRegidtrationPage"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.RegistrationTest -->
-      <class name="com.Tour.qa.testdata.ReservationOverviewTest2">
-        <methods>
-          <include name="checkCancleButton"/>
-          <include name="checkModifyButton"/>
-          <include name="checkPurchanseTicketButton"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.ReservationOverviewTest2 -->
-      <class name="com.Tour.qa.testdata.PrintTicketTest">
-        <methods>
-          <include name="ChooseDateShouldBeClickableFromMenuBar"/>
-          <include name="TickForConfirmationShouldBeClickable"/>
-          <include name="tearDown"/>
-          <include name="ConfirmAndPurchaseShouldBeClickableFromMenuBar"/>
-          <include name="TickForRegistrationShouldBeClickable"/>
-          <include name="PrintTicketShouldWorkFrmoMenu"/>
-          <include name="setUp"/>
-          <include name="ChooseTourshouldBeClickableFromManuBar"/>
-          <include name="RegistrationShouldBeClickableFromMenuBar"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.PrintTicketTest -->
-      <class name="com.Tour.qa.testdata.EditReservationTest">
-        <methods>
-          <include name="validateEditDateLink"/>
-          <include name="validatesNeed"/>
-          <include name="GuestFieldOnErrorPage"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.EditReservationTest -->
       <class name="com.Tour.qa.testdata.ModifyCancelTest">
         <methods>
-          <include name="checkReview"/>
-          <include name="checkDeleteTour"/>
           <include name="setUp"/>
-          <include name="printGroupSize"/>
+          <include name="validateCancelAndModifyButtonOfexpiredDate"/>
           <include name="tearDown"/>
-          <include name="checkResend"/>
-          <include name="checkModify"/>
-          <include name="checkCloseCancelwin"/>
         </methods>
       </class> <!-- com.Tour.qa.testdata.ModifyCancelTest -->
-      <class name="com.Tour.qa.testdata.HeaderFooterTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="validateResendlink"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.HeaderFooterTest -->
-      <class name="com.Tour.qa.testdata.ConfirmationPageTest">
-        <methods>
-          <include name="CheckTopMenu"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.ConfirmationPageTest -->
-      <class name="com.Tour.qa.testdata.ForgotPasswordTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="ValidateResetPWWithInValidEmail"/>
-          <include name="ValidateResetPWWithValidEmail"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.Tour.qa.testdata.ForgotPasswordTest -->
     </classes>
-  </test> <!-- Chick-fil-A®Backstage Tour Test Cases 1(failed) -->
-</suite> <!-- Failed suite [Chick-fil-A® Backstage Tour Automation Test1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
